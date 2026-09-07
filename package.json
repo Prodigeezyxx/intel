@@ -1,0 +1,19 @@
+{
+  "name": "tsl-nigeria-security-twin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TSL Logistics high-level Nigeria homeland-security resilience strategy and digital-twin dashboard",
+  "scripts": {
+    "start": "vite --host 127.0.0.1",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node tests/logic.test.mjs",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "vite": "^7.1.4"
+  }
+}
