@@ -372,13 +372,13 @@ function renderGraph(){
 }
 function selectGraphNode(i){
   document.querySelectorAll(".node").forEach(n=>n.classList.toggle("active",+n.dataset.node===i));
-  const n=graph.nodes[i];const info=nodeInfo[n[0]];
-  const header=info?'<div class="eyebrow">'+info[0]+'</div><h2>'+n[0]+'</h2><p class="lede">'+info[1]+'</p>':'<div class="eyebrow">'+n[1]+'</div><h2>'+n[0]+'</h2><p class="lede">A bounded public-service thread connected through governed data, workflow and measurable readiness.</p>';
-  const connected=graph.edges.filter(e=>e[0]===i||e[1]===i).map(e=>{
-    const other=e[0]===i?graph.nodes[e[1]][0]:graph.nodes[e[0]][0];
-    return '<li><strong>'+e[2]+'</strong> -> '+other+'</li>';
+  const n=graph.nodes[i];const name=n[0];const info=nodeInfo[name];
+  const header=info?'<div class="eyebrow">'+info[0]+'</div><h2>'+name+'</h2><p class="lede">'+info[1]+'</p>':'<div class="eyebrow">'+n[1]+'</div><h2>'+name+'</h2><p class="lede">A bounded public-service thread connected through governed data, workflow and measurable readiness.</p>';
+  const connected=graph.edges.filter(e=>e[0]===name||e[2]===name).map(e=>{
+    const other=e[0]===name?e[2]:e[0];
+    return '<li><strong>'+e[1]+'</strong> -> '+other+'</li>';
   }).join("");
-  const count=graph.edges.filter(e=>e[0]===i||e[1]===i).length;
+  const count=graph.edges.filter(e=>e[0]===name||e[2]===name).length;
   document.getElementById("graph-inspector").innerHTML=header+
     '<div class="assumption-box"><strong>Connected relationships ('+count+')</strong><ul>'+(connected||'<li>No direct edges</li>')+'</ul></div>'+
     '<div class="disclosure">'+icon("lock")+'Edge labels describe integration type, not tactical detail.</div>';

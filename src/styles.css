@@ -186,8 +186,8 @@ td:first-child { font-weight:800; width:18%; }
 .graph-shell { display:grid; grid-template-columns:minmax(600px,1.3fr) minmax(280px,.7fr); gap:16px; }
 .graph-panel { background:var(--md-sys-color-surface-container); border-radius:22px; min-height:650px; overflow:hidden; position:relative; }
 #graph-host svg { width:100%; height:650px; }
-.edge { stroke:var(--md-sys-color-outline-variant); stroke-width:1.2; }
-.edge-label { fill:var(--md-sys-color-outline); font-size:9px; font-family:var(--font); }
+.edge { stroke:var(--md-sys-color-outline); stroke-opacity:.45; stroke-width:1.4; }
+.edge-label { fill:var(--md-sys-color-on-surface-variant); font-size:9px; font-family:var(--font); }
 .node { cursor:pointer; }
 .node circle { stroke:var(--md-sys-color-surface); stroke-width:4; }
 .node:hover circle,.node.active circle { stroke:var(--md-sys-color-tertiary); }
