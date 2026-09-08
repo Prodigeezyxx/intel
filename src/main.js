@@ -1,7 +1,7 @@
 import {zones,zoneProfiles,missions,solutionCatalogue,offerings,vendorRows,graph,roadmap,kpis,guardrails,sources,assumptions} from './data.js';
 
 const nav=[
-  ['overview','dashboard','National twin'],['missions','crisis_alert','Mission threads'],['solutions','inventory_2','Solutions catalogue'],['offerings','deployed_code','Offer portfolio'],['graph','hub','Knowledge graph'],['roadmap','conversion_path','Roadmap'],['governance','policy','Governance'],['sources','library_books','Sources']
+  ['overview','dashboard','National twin','Twin'],['missions','crisis_alert','Mission threads','Missions'],['solutions','inventory_2','Solutions catalogue','Solutions'],['offerings','deployed_code','Offer portfolio','Offers'],['graph','hub','Knowledge graph','Graph'],['roadmap','conversion_path','Roadmap','Roadmap'],['governance','policy','Governance','Governance'],['sources','library_books','Sources','Sources']
 ];
 
 const state={
@@ -16,7 +16,7 @@ const state={
 const $=s=>document.querySelector(s); const $$=s=>[...document.querySelectorAll(s)];
 const icon=n=>`<span class="material-symbols-rounded" aria-hidden="true">${n}</span>`;
 const zoneFor=name=>Object.entries(zones).find(([,states])=>states.includes(name))?.[0];
-const fmt=n=>String(n).padStart(0,'0');
+const fmt=n=>String(n).padStart(2,'0');
 
 function shell(){
   $('#app').innerHTML=`<div class="app-shell">
@@ -35,7 +35,7 @@ function shell(){
       <main id="main" tabindex="-1">${views()}</main>
     </div>
   </div>
-  <nav class="mobile-bottom" aria-label="Mobile navigation">${nav.slice(0,5).map(([id,ic,l])=>`<button data-view="${id}">${icon(ic)}<span>${l.slice(0,6)}</span></button>`).join('')}</nav>
+  <nav class="mobile-bottom" aria-label="Mobile navigation">${nav.slice(0,5).map(([id,ic,l,s])=>`<button data-view="${id}">${icon(ic)}<span>${s||l.slice(0,6)}</span></button>`).join('')}</nav>
   <div class="dialog" id="brief-dialog" role="dialog" aria-modal="true" aria-hidden="true"><div class="dialog-head"><div><strong>Executive brief</strong><div class="org">TSL Logistics proposal foundation</div></div><button class="icon-button" id="close-brief" aria-label="Close">${icon('close')}</button></div><div class="dialog-body"><textarea id="brief-text" readonly>${execBrief()}</textarea><div style="display:flex;gap:8px;margin-top:12px"><button class="action-button" id="copy-brief">${icon('content_copy')}Copy brief</button><button class="action-button secondary" onclick="window.print()">${icon('print')}Print / PDF</button></div></div></div>
   <div class="toast" role="status" aria-live="polite" id="toast"></div>`;
 }
@@ -53,11 +53,11 @@ function metric(label,value,sub,pct){
 
 function overviewView(){
   return `<section class="view" id="view-overview" data-title="National twin">`+
-  headFn('TSL Logistics strategic intelligence','One national picture. Multiple accountable owners.','A high-level interactive model joining security missions, critical services, hydrography, maritime awareness, infrastructure integrity and delivery readiness—without creating a centralised surveillance state.')+
+  headFn('TSL Logistics strategic intelligence','One national picture. Multiple accountable owners.','A high-level interactive model joining security missions, critical services, hydrography, maritime awareness, infrastructure integrity and predictive tasking—with sovereign data control and human-authorised action.')+
   `<div class="grid kpi-grid">
     ${metric('Mission portfolios','06','prioritised threads',82)}
-    ${metric('Solution catalogue','16','lowest to highest complexity',68)}
-    ${metric('Offer modules','32+','grouped for procurement',74)}
+        ${metric('Solution catalogue',fmt(solutionCatalogue.length),'lowest to highest complexity',68)}
+        ${metric('Offer modules',fmt(offerings.reduce((a,g)=>a+g.items.length,0))+'+','grouped for procurement',74)}
     ${metric('Pilot horizon','90 days','to approved scope',58)}
     ${metric('Design posture','Federated','sovereign by default',91)}
   </div>
@@ -82,7 +82,7 @@ function overviewView(){
 
 function missionsView(){
   return `<section class="view" id="view-missions" data-title="Mission threads">`+
-  headFn('Outcome architecture','Organise autour des résultats publics — pas des catalogues fournisseurs.','Six threads connect Nigeria\u2019s documented priorities to clean, procurable service packages.')+
+  headFn('Outcome architecture','Organise around public outcomes — not vendor catalogues.','Six threads connect Nigeria\u2019s documented priorities to clean, procurable service packages.')+
   `<div class="grid mission-grid">`+
   missions.map(m=>`<button class="mission-card" data-mission="${m.id}" style="--accent:${m.color}"><span class="mission-icon">${icon(m.icon)}</span><h3>${m.title}</h3><p>${m.outcome}</p>
     <div class="meta-row"><span class="tag">${m.horizon}</span><span class="tag">${m.vendors.join(' + ')}</span></div>
@@ -157,52 +157,53 @@ const nodeInfo={
   "National Resilience Twin":['Federated decision platform','A knowledge-and-workflow layer over authorised source systems; exposes provenance, confidence and accountable ownership across all mission threads.'],
   "Knowledge & Scenario Graph":['Cross-mission model','Links missions, services, assets, dependencies and outcomes with provenance so planners can rehearse scenarios without exposing personal data.'],
   "Federated Security Data Platform":['Sovereign data layer','Zero-trust platform letting agencies collaborate without ceding source authority or personal-data control.'],
+  "Predictive policing & patrol optimisation":['Predictive tasking engine','Scores place, time and route from incident history and live feeds, solves patrol schedules and writes tasking back to agency C2. Named officials authorise every dispatch.'],
+  "Sovereign ontology & writeback":['Platform spine','Foundry-class object model: vessel, asset, incident, alert, patrol, survey. Resolves entities, stamps provenance, and writes decisions back into case, C2 and maintenance systems.'],
+  "TSL-Colossus deep-sea vessel":['Financed flagship','UNCLOS/CLCS-capable survey vessel for NHA: $100\u2013150M asset, 15\u201320% NHA commitment, LTO 36\u201360 months, delivery 12\u201324 months. Joint own / operate / maintain.'],
+  "NNS LANA rehab track":['Interim capability','OCEA 2018, 60.1m, EM2040/EM304, SEAPATH, HIPAP. Joint condition assessment 4\u20136 weeks before any repair cost; survey-ready inside 4 months.']
 };
 function nodeColor(kind){return {"integrator":"#68e0c3","platform":"#7cb7ff","vendor":"#b8a1ff","mission":"#ffd166","service":"#ff8a80","agency":"#ffad66"}[kind]||"#51645f"}
 
 function execBrief(){
+  const list=solutionCatalogue.map((s,i)=>(i+1)+". "+s.title).join("\n");
+  const colossus=solutionCatalogue.find(s=>s.id==="sol-22");
+  const ontology=solutionCatalogue.find(s=>s.id==="sol-21");
+  const predictive=solutionCatalogue.find(s=>s.id==="sol-20");
   return [
     "TSL LOGISTICS - NIGERIA NATIONAL RESILIENCE TWIN",
-    "High-level strategy foundation | Opportunity architecture across KONGSBERG, Exail and TSL",
+    "High-level strategy foundation | KONGSBERG + Exail + TSL-Colossus opportunity architecture",
     "",
     "PROPOSITION",
-    "Position TSL Logistics as Nigeria's sovereign integrator and lifecycle operator for a federated homeland-security resilience platform. Strengthen existing public programmes and statutory owners rather than duplicate command. KONGSBERG provides integrated maritime sensing, hydrography, autonomous underwater survey and decision support; Exail provides supervised autonomy, inertial navigation, subsea positioning, sonar and remote hydrographic operations. TSL owns the Nigerian layer: integration, operations, maintenance, workforce transfer, service levels and benefits.",
+    "Position TSL Logistics as Nigeria's sovereign integrator and lifecycle operator for a full security-technology stack. KONGSBERG provides integrated maritime sensing, hydrography, autonomous underwater survey and decision support; Exail provides supervised autonomy, inertial navigation, subsea positioning and remote hydrographic operations. TSL owns the Nigerian layer and the TSL-Colossus vehicle finances sovereign survey capability.",
     "",
-    "WHATS POSSIBLE: 16 SOLUTIONS LOWEST TO HIGHEST COMPLEXITY",
-    "1. Community reporting hotlines",
-    "2. Incident taxonomy and shared case tracking",
-    "3. Offline field data collection",
-    "4. Resilient multi-bearer comms backbone",
-    "5. Local maintenance, calibration and spares centre",
-    "6. National asset knowledge graph (abstracted)",
-    "7. National maritime picture pilot (bounded)",
-    "8. Digital twin of a consenting critical asset",
-    "9. NNS LANA readiness and lifecycle review",
-    "10. Autonomous hydrographic survey service",
-    "11. Federated security data platform (sovereign)",
-    "12. Flood-readiness digital twin with early action",
-    "13. Evidence and chain-of-custody interoperability",
-    "14. Federated National Resilience Twin",
-    "15. Command, control and coordination modernisation",
-    "16. AI assurance and trust office for security analytics",
+    "PLATFORM SPINE",
+    ontology.summary,
+    predictive.summary,
+    "",
+    "WHAT IS POSSIBLE: "+solutionCatalogue.length+" SOLUTIONS LOWEST TO HIGHEST COMPLEXITY",
+    list,
+    "",
+    "HYDROGRAPHY TRACK (TSL-COLOSSUS)",
+    "Two tracks, one partnership. Track 1: NNS LANA rehabilitation (OCEA 2018, EM2040/EM304, SEAPATH, HIPAP) as the interim survey asset - joint condition assessment in 4-6 weeks, no repair cost until assessed. Track 2: financed UNCLOS/CLCS-capable flagship, $100-150M asset with 15-20% NHA commitment, deliverable in 12-24 months, interim capability within 4 months of signing.",
     "",
     "FIRST TWO LIGHTHOUSE PILOTS",
-    "1. Bounded maritime/hydrographic data-fusion and survey productivity pilot including NNS LANA technical readiness assessment and an unmanned survey demonstration.",
+    "1. Bounded maritime/hydrographic data-fusion pilot including NNS LANA technical readiness assessment and an unmanned survey demonstration.",
     "2. Critical-infrastructure integrity twin on a consenting TSL-managed asset joining inspection, maintenance, cyber-physical risk, inventory and recovery data.",
     "",
     "COMMERCIAL MODEL",
-    "Paid discovery + two fixed-outcome pilots. Then modular managed services with uptime, data-quality, throughput, asset-readiness, local-capacity and safeguards KPIs. Open interfaces, Nigeria-controlled keys, source-system authority and exit rights.",
+    "Paid discovery + two fixed-outcome pilots. Then modular managed services with uptime, data-quality, throughput, asset-readiness, predictive-task authorisation, local-capacity and safeguards KPIs. Open interfaces, Nigeria-controlled keys, source-system authority and exit rights.",
     "",
     "NON-NEGOTIABLES",
-    "No live or personal data. No autonomous coercive decisions. No predictive policing. Named human decision owners, provenance/confidence on claims, purpose-based access, audit, retention, redress, independent oversight.",
+    "No live or personal data on this prototype. Models score place, time and route; named officials authorise every patrol or enforcement tasking and every override is logged. No automated arrest or autonomous use of force. Provenance and confidence on every claim; purpose-based access; audit; retention; redress; independent oversight.",
     "",
     "DECISION REQUEST",
-    "Approve a 90-day joint discovery involving TSL, mission owners and OEM teams to validate mandate, assets, baselines, safeguards, export constraints, pilot scopes, lifecycle model and commercial envelope."
+    "Approve a 90-day joint discovery: mandate and baseline, LANA Phase-1 assessment, ontology workshop with mission owners, and commercial envelope for the two-track hydrography programme."
   ].join("\n");
 }
 
 function complexityColor(c){return ["#2f6a5b","#397463","#96763e","#9a773d","#914a50"][c-1]}
 function renderSolutions(cx="all"){
+  state.cx=cx;
   const list=cx==="all"?solutionCatalogue:solutionCatalogue.filter(s=>s.complexity===+cx);
   const html=list.map(s=>`
     <article class="solution-card" data-solution="${s.id}" style="--accent:${complexityColor(+s.complexity)}">
@@ -224,7 +225,7 @@ function renderSolutions(cx="all"){
 function inspectSolution(id){
   const s=solutionCatalogue.find(x=>x.id===id); if(!s)return; state.solution=id;
   const detail=document.getElementById("solution-grid");
-  const connected=missions.filter(m=>m.offers.some(o=>o.includes(s.title)||s.title.includes(o))).map(m=>m.title);
+  const connected=missions.filter(m=>m.offers.some(o=>o===s.title)).map(m=>m.title);
   const parts=[];
   parts.push('<article class="solution-detail" style="--accent:'+complexityColor(+s.complexity)+'">');
   parts.push('<div class="solution-head"><span class="num">Solution '+s.id+' - Complexity '+s.complexity+'</span><span class="tag">'+s.tag+'</span></div>');
@@ -239,13 +240,16 @@ function inspectSolution(id){
   parts.push('</div>');
   parts.push('<div class="meta-row">'+s.owners.map(o=>'<span class="tag">'+o+'</span>').join('')+s.vendors.map(v=>'<span class="tag">'+v+'</span>').join('')+(connected.length?'<span class="tag">Threads: '+connected.length+'</span>':'')+'</div>');
   if(connected.length){
-    parts.push('<div class="assumption-box"><strong>Connected mission threads</strong><ul>'+connected.map(t=>'<li>'+t+'</li>').join('')+'</ul></div>');
+      parts.push('<div class="assumption-box"><strong>Connected mission threads</strong><ul>'+connected.map(t=>'<li>'+t+'</li>').join('')+'</ul></div>');
+    }
+    parts.push('<div style="margin-top:12px"><button class="action-button secondary" id="back-to-catalogue" type="button">'+icon('arrow_back')+'Back to catalogue</button></div>');
+    parts.push('</article>');
+    detail.innerHTML=parts.join('');
+    const back=document.getElementById("back-to-catalogue");
+    if(back)back.addEventListener("click",()=>renderSolutions(state.cx||"all"));
+    detail.scrollIntoView({behavior:"smooth",block:"nearest"});
+    state.view="solutions";
   }
-  parts.push('</article>');
-  detail.innerHTML=parts.join('');
-  detail.scrollIntoView({behavior:"smooth",block:"nearest"});
-  state.view="solutions";
-}
 
 function colorFor(zone,mode){
   if(mode==="mission"){
@@ -321,10 +325,10 @@ function renderMission(id){
   const m=missions.find(x=>x.id===id); if(!m)return; state.mission=id;
   const detail=document.getElementById("mission-detail");detail.className="mission-detail open";
   const cards=m.offers.map(x=>{
-    const sol=solutionCatalogue.find(s=>s.title.includes(x)||x.includes(s.title));
-    const sid=sol?s.id:"";
-    const sub=sol?"Complexity "+sol.complexity:"See catalogue";
-    const disabled=sol?"":" aria-disabled='true'";
+    const match=solutionCatalogue.find(item=>item.title===x);
+    const sid=match?match.id:"";
+    const sub=match?"Complexity "+match.complexity:"See catalogue";
+    const disabled=match?"":" aria-disabled='true'";
     return '<button class="solution-card mini" data-solution="'+sid+'"'+disabled+'><h3>'+x+'</h3><small>'+sub+'</small></button>';
   }).join("");
   const html='<div><div class="eyebrow">'+m.lead+'</div><h2>'+m.title+'</h2>'+
@@ -387,11 +391,13 @@ function selectGraphNode(i){
 function renderSources(q=""){
   const low=q.toLowerCase();
   const filtered=sources.filter(s=>Object.values(s).join(" ").toLowerCase().includes(low));
-  const html=filtered.map(s=>'<a class="source-card" href="'+s.url+'" target="_blank" rel="noopener"><span class="tag">'+s.tag+'</span><div><strong>'+s.title+'</strong><span class="org">'+s.org+'</span></div><p>'+s.note+'</p><span class="open-icon">'+icon("open_in_new")+'</span></a>').join("")||'<div class="disclosure">No source matches that filter.</div>';
+  const html=filtered.map(s=>s.private
+    ?'<div class="source-card" aria-disabled="true"><span class="tag">'+s.tag+'</span><div><strong>'+s.title+'</strong><span class="org">'+s.org+'</span></div><p>'+s.note+'</p><span class="open-icon">'+icon("lock")+'</span></div>'
+    :'<a class="source-card" href="'+s.url+'" target="_blank" rel="noopener"><span class="tag">'+s.tag+'</span><div><strong>'+s.title+'</strong><span class="org">'+s.org+'</span></div><p>'+s.note+'</p><span class="open-icon">'+icon("open_in_new")+'</span></a>').join("")||'<div class="disclosure">No source matches that filter.</div>';
   document.getElementById("source-list").innerHTML=html;
 }
 function exportSources(){
-  const rows=[["Tag","Title","Organisation","URL","Relevance"],...sources.map(s=>[s.tag,s.title,s.org,s.url,s.note])];
+  const rows=[["Tag","Title","Organisation","URL","Relevance"],...sources.filter(s=>!s.private).map(s=>[s.tag,s.title,s.org,s.url,s.note])];
   const csv=rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(",")).join("\n");
   const a=document.createElement("a");
   a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));
