@@ -324,6 +324,32 @@ export const solutionCatalogue = [
     owners: ['Nigerian Army Intelligence', 'NITDA', 'ONSA'],
     vendors: ['TSL', 'neutral'],
     icon: 'smart_toy', tag: 'AI capability'
+  },
+  {
+    id: 'sol-18',
+    complexity: 3,
+    title: 'AI-assisted surveillance and preventive analysis',
+    summary: 'Edge-to-federated analytics stack for pattern detection across camera, radar, AIS and comms feeds, with human-in-the-loop alerting and no persistent biometric storage.',
+    what_it_solves: ['Blind spots from isolated sensor feeds', 'False positives swamp analyst capacity', 'No cross-domain correlation of threats'],
+    dependencies: ['Sensor network coverage plan', 'Agency SOP for alert escalation', 'Data-retention and deletion policy'],
+    components: ['Edge inference nodes on cameras/radars', 'Cross-feed correlation engine', 'Alert triage dashboard with audit trail', 'Model drift monitoring'],
+    value: 'Up to 60% reduction in missed events; analyst capacity freed for investigation.',
+    owners: ['Nigerian Army Intelligence', 'NSCDC', 'NIMSA'],
+    vendors: ['TSL', 'KONGSBERG', 'neutral'],
+    icon: 'visibility', tag: 'Surveillance'
+  },
+  {
+    id: 'sol-19',
+    complexity: 5,
+    title: 'Autonomous drone airport facility',
+    summary: 'End-to-end verti-port facility for UAV takeoff, landing, charging and automated dispatch, integrated with air-traffic coordination and mission tasking for remote-area coverage.',
+    what_it_solves: ['No reliable launch/recovery for beyond-visual-range UAVs', 'Manual drone recovery loses assets in remote zones', 'No integration with national airspace management'],
+    dependencies: ['NAMA/UAS traffic management clearance', 'Power/resilient infrastructure', 'Remote operator certification'],
+    components: ['Automated net-recovery/verti-pad', 'Drone charging and payload-swap station', 'UAS traffic de-confliction interface', 'Mission tasking API with geofence engine'],
+    value: 'Persistent wide-area surveillance without aircrew risk; 80% reduction in asset loss.',
+    owners: ['NAMA', 'Nigerian Air Force', 'Nigerian Army Intelligence'],
+    vendors: ['KONGSBERG', 'TSL', 'Exail'],
+    icon: 'drone_front', tag: 'Air mobility'
   }
 ];
 
@@ -352,7 +378,8 @@ export const offerings = [
     items: [
       ['National maritime picture pilot (bounded area)','Limited-area pilot fusing lawful AIS, coastal sensors and satellite data into an auditable common picture.'],
       ['Digital twin of a consenting critical asset','Bounded integrity twin of one consenting TSL-managed asset joining condition, maintenance and risk data.'],
-      ['NNS LANA readiness and lifecycle review','OEM health and obsolescence assessment plus TSL lifecycle-support plan for national hydrography.']
+      ['NNS LANA readiness and lifecycle review','OEM health and obsolescence assessment plus TSL lifecycle-support plan for national hydrography.'],
+      ['AI-assisted surveillance and preventive analysis','Edge-to-federated analytics stack for pattern detection across camera, radar, AIS and comms feeds with human-in-the-loop alerting.']
     ]
   },
   {
@@ -372,7 +399,8 @@ export const offerings = [
     items: [
       ['Federated National Resilience Twin','Federated decision platform across all six mission threads, mission-owned and TSL-operated.'],
       ['Command, control and coordination modernisation','Modernised federal/zonal coordination centres connecting picture, workflow and mission owners.'],
-      ['AI assurance and trust office for security analytics','Governance function for algorithmic assistance via register, assessments, human review and recourse.']
+      ['AI assurance and trust office for security analytics','Governance function for algorithmic assistance via register, assessments, human review and recourse.'],
+      ['Autonomous drone airport facility','End-to-end verti-port for UAV takeoff, landing, charging and automated dispatch integrated with air-traffic coordination.']
     ]
   }
 ];
@@ -417,6 +445,8 @@ export const graph = {
     ['Evidence & chain of custody','service',620,470],
     ['Command & coordination modernisation','service',190,510],
     ['AI assurance & trust office','service',810,510],
+    ['AI surveillance & analytics','service',220,550],
+    ['Autonomous drone airport','service',900,490],
     // Agencies / owners
     ['NIMASA / Navy / NHA','agency',120,380],
     ['ONSA / Police / States','agency',500,550],
@@ -463,6 +493,12 @@ export const graph = {
     ['Evidence & chain of custody','strengthens','Border, coast & environmental crime'],
     ['Command & coordination modernisation','coordinates','All missions'],
     ['AI assurance & trust office','governs','Common operating picture'],
+    ['AI assurance & trust office','governs','AI surveillance & analytics'],
+    ['Federated Security Data Platform','enables','AI surveillance & analytics'],
+    ['AI surveillance & analytics','supports','Cyber & information resilience'],
+    ['Autonomous drone airport','provides aerial sensing to','Border, coast & environmental crime'],
+    ['Autonomous drone airport','extends','Maritime security & blue economy'],
+    ['Autonomous drone airport','de-conflicts via','National Resilience Twin'],
     // Mission owners
     ['NIMASA / Navy / NHA','owns','Maritime security & blue economy'],
     ['NIMASA / Navy / NHA','owns','Maritime common picture'],

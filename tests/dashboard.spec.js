@@ -33,13 +33,13 @@ test.describe("TSL National Resilience Twin", () => {
 
   test("solutions catalogue filters by complexity", { timeout: 60000 }, async ({ page }) => {
     await page.goto("/#solutions", { waitUntil: "networkidle" });
-    await expect(page.locator(".solution-card")).toHaveCount(17, { timeout: 15000 });
+    await expect(page.locator(".solution-card")).toHaveCount(19, { timeout: 15000 });
     await page.getByRole("button", { name: "Complexity 1" }).click();
     await expect(page.locator(".solution-card")).toHaveCount(2);
     await page.getByRole("button", { name: "Complexity 5" }).click();
-    await expect(page.locator(".solution-card")).toHaveCount(3);
+    await expect(page.locator(".solution-card")).toHaveCount(4);
     await page.getByRole("button", { name: "All complexity" }).click();
-    await expect(page.locator(".solution-card")).toHaveCount(17);
+    await expect(page.locator(".solution-card")).toHaveCount(19);
   });
 
   test("offer tabs, graph, sources and theme are interactive", { timeout: 90000 }, async ({ page }) => {
@@ -47,11 +47,15 @@ test.describe("TSL National Resilience Twin", () => {
     await expect(page.locator(".offer-item")).toHaveCount(2);
     await page.getByRole("tab", { name: /Foundational data/ }).click();
     await expect(page.locator(".offer-item")).toHaveCount(4);
+    await page.getByRole("tab", { name: /Pilot services/ }).click();
+    await expect(page.locator(".offer-item")).toHaveCount(4);
+    await page.getByRole("tab", { name: /Sovereign platforms/ }).click();
+    await expect(page.locator(".offer-item")).toHaveCount(5);
     await page.getByRole("tab", { name: /National-scale coordination/ }).click();
-    await expect(page.locator(".offer-item")).toHaveCount(3);
+    await expect(page.locator(".offer-item")).toHaveCount(4);
 
     await page.getByRole("button", { name: "Knowledge graph" }).click();
-    await expect(page.locator(".node")).toHaveCount(28, { timeout: 15000 });
+    await expect(page.locator(".node")).toHaveCount(30, { timeout: 15000 });
     await page.locator(".node").nth(4).click();
     await expect(page.locator("#graph-inspector")).toContainText("KONGSBERG");
 
