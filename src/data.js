@@ -55,42 +55,42 @@ export const missions = [
     id:'maritime', icon:'sailing', title:'Maritime security & blue economy', horizon:'0–18 months', lead:'NIMASA / Nigerian Navy / NHA',
     problem:'Fragmented maritime picture, piracy and armed robbery exposure, illegal activity, navigation risk and limited persistence across a large maritime domain.',
     outcome:'A shared, auditable maritime picture that strengthens safety of navigation, search and rescue, lawful enforcement and blue-economy confidence.',
-    offers:['National Maritime Data Fabric','cView / Foresight interoperability study','Coastal AIS and radar refresh','DriX hydrographic service pilot','NNS LANA readiness & lifecycle programme','Search-and-rescue decision support'],
+    offers:['National maritime picture pilot (bounded area)','NNS LANA readiness and lifecycle review','Autonomous hydrographic survey service','Deep-sea survey vessel acquisition (TSL-Colossus)','AI-assisted surveillance and preventive analysis','Federated National Resilience Twin'],
     vendors:['KONGSBERG','Exail','TSL'], color:'#68e0c3'
   },
   {
     id:'infrastructure', icon:'account_tree', title:'Critical infrastructure assurance', horizon:'0–24 months', lead:'ONSA / sector owners',
     problem:'Energy, ports, telecoms, transport and subsea assets require coordinated resilience, inspection, maintenance and cyber-physical risk governance.',
     outcome:'Higher asset availability, faster verified anomaly triage, improved preventive maintenance and evidence-grade incident records.',
-    offers:['National asset knowledge graph','Pipeline and terminal integrity twin','Subsea infrastructure inspection service','Leak and environmental baseline monitoring','CNII-aligned cyber risk service','Resilience exercises and continuity plans'],
+    offers:['National asset knowledge graph (abstracted)','Digital twin of a consenting critical asset','Offline-first field data collection with sync','Local maintenance, calibration and spares centre','Federated security data platform with Sovereign control','Sovereign object ontology and writeback layer'],
     vendors:['TSL','KONGSBERG','Exail'], color:'#ffd166'
   },
   {
     id:'land', icon:'shield', title:'Community safety & kidnapping prevention', horizon:'0–18 months', lead:'Police / ONSA / states',
-    problem:'Kidnapping, banditry and disrupted rural access demand trusted reporting, case coordination, logistics and communications—without creating a mass-surveillance system.',
-    outcome:'Faster verified referrals, safer public-service continuity, stronger chain of custody and better protection of schools and communities.',
-    offers:['Federated incident exchange','Offline-first protected reporting','Emergency communications resilience','School safety readiness assessments','Evidence and chain-of-custody workflows','Victim support referral coordination'],
+    problem:'Kidnapping, banditry and disrupted rural access demand trusted reporting, case coordination, logistics, communications and predictive tasking of scarce patrols.',
+    outcome:'Faster verified referrals, predictive patrol allocation, stronger chain of custody and better protection of schools and communities.',
+    offers:['Trusted community incident reporting hotlines','Incident taxonomy and shared case tracking','Evidence and chain-of-custody interoperability','AI-assisted surveillance and preventive analysis','Predictive policing and patrol optimisation','Resilient multi-bearer communications backbone'],
     vendors:['TSL','KONGSBERG'], color:'#ff8a80'
   },
   {
     id:'disaster', icon:'flood', title:'Disaster & climate resilience', horizon:'0–18 months', lead:'NEMA / states / NiMet / NIHSA',
     problem:'Floods and climate shocks compound displacement, access and critical-service risks; forecasts need clearer links to funded early action.',
     outcome:'A common readiness picture, pre-positioned logistics, accessible alerts and measurable early action before impact.',
-    offers:['Flood readiness digital twin','Critical-route contingency model','Relief inventory visibility','Hydrographic and river survey support','Multi-channel public warning service','Post-event rapid assessment workflow'],
+    offers:['Flood-readiness digital twin with early action','Offline-first field data collection with sync','Autonomous hydrographic survey service','Resilient multi-bearer communications backbone','Sovereign object ontology and writeback layer','Federated National Resilience Twin'],
     vendors:['TSL','Exail','KONGSBERG'], color:'#7cb7ff'
   },
   {
     id:'border', icon:'public', title:'Border, coast & environmental crime', horizon:'6–30 months', lead:'Customs / Immigration / Navy / regulators',
     problem:'Smuggling, trafficking, illegal fishing, illegal mining and environmental crime cross agency and geographic boundaries.',
     outcome:'Shared risk indicators, defensible referrals and coordinated patrol planning at an aggregated level with judicial oversight.',
-    offers:['Cross-agency entity resolution','Trade and vessel anomaly screening','Illegal fishing evidence service','Environmental change detection','Mobile inspection toolkit','Regional information-sharing gateway'],
+    offers:['AI-assisted surveillance and preventive analysis','Predictive policing and patrol optimisation','Evidence and chain-of-custody interoperability','Autonomous drone airport facility','National maritime picture pilot (bounded area)','Sovereign object ontology and writeback layer'],
     vendors:['TSL','KONGSBERG','Exail'], color:'#b8a1ff'
   },
   {
     id:'cyber', icon:'security', title:'Cyber & information resilience', horizon:'0–24 months', lead:'ONSA / NITDA / sector CSIRTs',
     problem:'National services face cyber risk, data fragmentation, vendor lock-in, disinformation and weak cross-sector incident learning.',
     outcome:'Sovereign, federated security operations with common standards, recovery metrics, auditability and public-trust controls.',
-    offers:['Sovereign security data platform','CNII maturity assessments','Zero-trust integration blueprint','OT/IT monitoring for terminals','Crisis communications playbooks','Data-governance and AI assurance office'],
+    offers:['Federated security data platform with Sovereign control','Sovereign AI lab and compute centre','AI assurance and trust office for security analytics','Sovereign object ontology and writeback layer','Command, control and coordination modernisation','Predictive policing and patrol optimisation'],
     vendors:['TSL','KONGSBERG'], color:'#ffad66'
   }
 ];
@@ -117,7 +117,7 @@ export const solutionCatalogue = [
     vendors: ['neutral', 'TSL'],
     icon: 'call', tag: 'Community trust'
   },
-  {
+    {
     id: 'sol-02',
     complexity: 1,
     title: 'Incident taxonomy and shared case tracking',
@@ -130,7 +130,7 @@ export const solutionCatalogue = [
     vendors: ['TSL', 'neutral'],
     icon: 'track_changes', tag: 'Interoperability'
   },
-  {
+    {
     id: 'sol-03',
     complexity: 2,
     title: 'Offline-first field data collection with sync',
@@ -143,7 +143,7 @@ export const solutionCatalogue = [
     vendors: ['TSL', 'neutral'],
     icon: 'offline_bolt', tag: 'Field operations'
   },
-  {
+    {
     id: 'sol-04',
     complexity: 2,
     title: 'Resilient multi-bearer communications backbone',
@@ -156,7 +156,7 @@ export const solutionCatalogue = [
     vendors: ['KONGSBERG', 'TSL'],
     icon: 'wifi', tag: 'Continuity'
   },
-  {
+    {
     id: 'sol-05',
     complexity: 2,
     title: 'Local maintenance, calibration and spares centre',
@@ -169,7 +169,7 @@ export const solutionCatalogue = [
     vendors: ['KONGSBERG', 'Exail', 'TSL'],
     icon: 'precision_manufacturing', tag: 'Lifecycle'
   },
-  {
+    {
     id: 'sol-06',
     complexity: 3,
     title: 'National maritime picture pilot (bounded area)',
@@ -182,7 +182,7 @@ export const solutionCatalogue = [
     vendors: ['KONGSBERG', 'Exail', 'TSL'],
     icon: 'public', tag: 'MDA'
   },
-  {
+    {
     id: 'sol-07',
     complexity: 3,
     title: 'Digital twin of a consenting critical asset',
@@ -195,7 +195,7 @@ export const solutionCatalogue = [
     vendors: ['KONGSBERG', 'TSL'],
     icon: 'precision_factorial', tag: 'Asset integrity'
   },
-  {
+    {
     id: 'sol-08',
     complexity: 3,
     title: 'National asset knowledge graph (abstracted)',
@@ -208,7 +208,7 @@ export const solutionCatalogue = [
     vendors: ['TSL', 'KONGSBERG'],
     icon: 'account_tree', tag: 'Dependencies'
   },
-  {
+    {
     id: 'sol-09',
     complexity: 3,
     title: 'NNS LANA readiness and lifecycle review',
@@ -221,7 +221,20 @@ export const solutionCatalogue = [
     vendors: ['KONGSBERG', 'TSL'],
     icon: 'directions_boat', tag: 'Hydrography'
   },
-  {
+    {
+    id: 'sol-18',
+    complexity: 3,
+    title: 'AI-assisted surveillance and preventive analysis',
+    summary: 'Edge-to-federated analytics stack for pattern detection across camera, radar, AIS and comms feeds, with human-in-the-loop alerting and no persistent biometric storage.',
+    what_it_solves: ['Blind spots from isolated sensor feeds', 'False positives swamp analyst capacity', 'No cross-domain correlation of threats'],
+    dependencies: ['Sensor network coverage plan', 'Agency SOP for alert escalation', 'Data-retention and deletion policy'],
+    components: ['Edge inference nodes on cameras/radars', 'Cross-feed correlation engine', 'Alert triage dashboard with audit trail', 'Model drift monitoring'],
+    value: 'Up to 60% reduction in missed events; analyst capacity freed for investigation.',
+    owners: ['Nigerian Army Intelligence', 'NSCDC', 'NIMASA'],
+    vendors: ['TSL', 'KONGSBERG', 'neutral'],
+    icon: 'visibility', tag: 'Surveillance'
+  },
+    {
     id: 'sol-10',
     complexity: 4,
     title: 'Autonomous hydrographic survey service',
@@ -234,7 +247,7 @@ export const solutionCatalogue = [
     vendors: ['Exail', 'KONGSBERG', 'TSL'],
     icon: 'survey', tag: 'Blue economy'
   },
-  {
+    {
     id: 'sol-11',
     complexity: 4,
     title: 'Federated security data platform with Sovereign control',
@@ -247,7 +260,7 @@ export const solutionCatalogue = [
     vendors: ['TSL', 'neutral'],
     icon: 'security', tag: 'Sovereignty'
   },
-  {
+    {
     id: 'sol-12',
     complexity: 4,
     title: 'Flood-readiness digital twin with early action',
@@ -260,7 +273,7 @@ export const solutionCatalogue = [
     vendors: ['TSL', 'KONGSBERG'],
     icon: 'flood', tag: 'Climate'
   },
-  {
+    {
     id: 'sol-13',
     complexity: 4,
     title: 'Evidence and chain-of-custody interoperability',
@@ -273,46 +286,7 @@ export const solutionCatalogue = [
     vendors: ['TSL', 'neutral'],
     icon: 'gavel', tag: 'Justice'
   },
-  {
-    id: 'sol-14',
-    complexity: 5,
-    title: 'Federated National Resilience Twin',
-    summary: 'A federated decision platform spanning assets, services, readiness and scenarios across all six mission threads, owned by the missions, operated by TSL and advised by KONGSBERG/Exail technology where relevant.',
-    what_it_solves: ['Siloed national resilience information', 'No common readiness picture', 'Hard to rehearse multi-domain scenarios'],
-    dependencies: ['Mandate and legal basis', 'Agency data-sharing agreements', 'Sovereign governance and independent audit'],
-    components: ['Federated data and identity layer', 'Knowledge and scenario graph', 'Readiness dashboards and simulation', 'Human-authorised decision workflow'],
-    value: 'Coordinated, auditable national readiness; lower response time across missions.',
-    owners: ['ONSA', 'NEMA', 'Sector owners'],
-    vendors: ['TSL', 'KONGSBERG', 'Exail'],
-    icon: 'hub', tag: 'National twin'
-  },
-  {
-    id: 'sol-15',
-    complexity: 5,
-    title: 'Command, control and coordination modernisation',
-    summary: 'A standards-based upgrade of federal and zonal coordination centres connecting mission owners, the common picture and workflow, without duplicating command hierarchies.',
-    what_it_solves: ['Outdated, stove-piped command systems', 'Poor visibility across agencies', 'No shared workflow for escalation'],
-    dependencies: ['Command structure agreement', 'Existing C4i inventory', 'Staff training and change management'],
-    components: ['Common-picture workbench', 'Authoritative workflow engine', 'Voice/data/video integration', 'Exercise and rehearsal capability'],
-    value: 'Better escalation; faster authorised response; preserved command relationships.',
-    owners: ['ONSA', 'NEMA', 'NIMASA', 'States'],
-    vendors: ['KONGSBERG', 'TSL'],
-    icon: 'leaderboard', tag: 'C4I'
-  },
-  {
-    id: 'sol-16',
-    complexity: 5,
-    title: 'AI assurance and trust office for security analytics',
-    summary: 'A dedicated function governing any algorithmic assistance through algorithm registers, impact assessments, human review and recourse, with no autonomous enforcement.',
-    what_it_solves: ['Unauditable AI assistance', 'Bias and explainability concerns', 'No recourse for affected people'],
-    dependencies: ['Legislative/governance mandate', 'Resource and staffing', 'Agency participation and data'],
-    components: ['Algorithm register', 'Impact and human-rights assessments', 'Model card and confidence labelling', 'Complaint, audit and recourse workflow'],
-    value: 'Public trust in automated assistance; defensible, compliant analytics.',
-    owners: ['ONSA', 'Nigerian Data Protection Commission', 'Civil society'],
-    vendors: ['TSL', 'neutral'],
-    icon: 'psychology', tag: 'Governance'
-  },
-  {
+    {
     id: 'sol-17',
     complexity: 4,
     title: 'Sovereign AI lab and compute centre',
@@ -325,20 +299,59 @@ export const solutionCatalogue = [
     vendors: ['TSL', 'neutral'],
     icon: 'smart_toy', tag: 'AI capability'
   },
-  {
-    id: 'sol-18',
-    complexity: 3,
-    title: 'AI-assisted surveillance and preventive analysis',
-    summary: 'Edge-to-federated analytics stack for pattern detection across camera, radar, AIS and comms feeds, with human-in-the-loop alerting and no persistent biometric storage.',
-    what_it_solves: ['Blind spots from isolated sensor feeds', 'False positives swamp analyst capacity', 'No cross-domain correlation of threats'],
-    dependencies: ['Sensor network coverage plan', 'Agency SOP for alert escalation', 'Data-retention and deletion policy'],
-    components: ['Edge inference nodes on cameras/radars', 'Cross-feed correlation engine', 'Alert triage dashboard with audit trail', 'Model drift monitoring'],
-    value: 'Up to 60% reduction in missed events; analyst capacity freed for investigation.',
-    owners: ['Nigerian Army Intelligence', 'NSCDC', 'NIMSA'],
+    {
+    id: 'sol-20',
+    complexity: 4,
+    title: 'Predictive policing and patrol optimisation',
+    summary: 'A Palantir-style risk and tasking engine that scores places, routes and time windows from incident history, community reports, AIS/camera alerts and logistics constraints, then writes recommended patrols back into agency C2.',
+    what_it_solves: ['Patrols tasked from anecdote not pattern', 'Hotspots identified too late', 'No closed loop from prediction to deployment'],
+    dependencies: ['Lawful incident and patrol data feeds', 'Named human authorisers for tasking', 'Model register and override log'],
+    components: ['Place/time risk model', 'Patrol optimisation and resource solver', 'Writeback to CAD / C2 tasking', 'Analyst workbench with explainability and override'],
+    value: 'Higher hit-rate on kidnapping, banditry and maritime crime windows; fewer wasted patrol hours.',
+    owners: ['Police', 'ONSA', 'NSCDC', 'Navy'],
     vendors: ['TSL', 'KONGSBERG', 'neutral'],
-    icon: 'visibility', tag: 'Surveillance'
+    icon: 'online_prediction', tag: 'Predictive ops'
   },
-  {
+    {
+    id: 'sol-14',
+    complexity: 5,
+    title: 'Federated National Resilience Twin',
+    summary: 'A federated decision platform spanning assets, services, readiness and scenarios across all six mission threads, owned by the missions, operated by TSL and advised by KONGSBERG/Exail technology where relevant.',
+    what_it_solves: ['Siloed national resilience information', 'No common readiness picture', 'Hard to rehearse multi-domain scenarios'],
+    dependencies: ['Mandate and legal basis', 'Agency data-sharing agreements', 'Sovereign governance and independent audit'],
+    components: ['Federated data and identity layer', 'Knowledge and scenario graph', 'Readiness dashboards and simulation', 'Human-authorised decision workflow'],
+    value: 'Coordinated, auditable national readiness; lower response time across missions.',
+    owners: ['ONSA', 'NEMA', 'Sector owners'],
+    vendors: ['TSL', 'KONGSBERG', 'Exail'],
+    icon: 'hub', tag: 'National twin'
+  },
+    {
+    id: 'sol-15',
+    complexity: 5,
+    title: 'Command, control and coordination modernisation',
+    summary: 'A standards-based upgrade of federal and zonal coordination centres connecting mission owners, the common picture and workflow, without duplicating command hierarchies.',
+    what_it_solves: ['Outdated, stove-piped command systems', 'Poor visibility across agencies', 'No shared workflow for escalation'],
+    dependencies: ['Command structure agreement', 'Existing C4i inventory', 'Staff training and change management'],
+    components: ['Common-picture workbench', 'Authoritative workflow engine', 'Voice/data/video integration', 'Exercise and rehearsal capability'],
+    value: 'Better escalation; faster authorised response; preserved command relationships.',
+    owners: ['ONSA', 'NEMA', 'NIMASA', 'States'],
+    vendors: ['KONGSBERG', 'TSL'],
+    icon: 'leaderboard', tag: 'C4I'
+  },
+    {
+    id: 'sol-16',
+    complexity: 5,
+    title: 'AI assurance and trust office for security analytics',
+    summary: 'A dedicated function governing any algorithmic assistance through algorithm registers, impact assessments, human review and recourse, with no autonomous enforcement.',
+    what_it_solves: ['Unauditable AI assistance', 'Bias and explainability concerns', 'No recourse for affected people'],
+    dependencies: ['Legislative/governance mandate', 'Resource and staffing', 'Agency participation and data'],
+    components: ['Algorithm register', 'Impact and human-rights assessments', 'Model card and confidence labelling', 'Complaint, audit and recourse workflow'],
+    value: 'Public trust in automated assistance; defensible, compliant analytics.',
+    owners: ['ONSA', 'Nigerian Data Protection Commission', 'Civil society'],
+    vendors: ['TSL', 'neutral'],
+    icon: 'psychology', tag: 'Governance'
+  },
+    {
     id: 'sol-19',
     complexity: 5,
     title: 'Autonomous drone airport facility',
@@ -350,8 +363,34 @@ export const solutionCatalogue = [
     owners: ['NAMA', 'Nigerian Air Force', 'Nigerian Army Intelligence'],
     vendors: ['KONGSBERG', 'TSL', 'Exail'],
     icon: 'drone_front', tag: 'Air mobility'
+  },
+    {
+    id: 'sol-21',
+    complexity: 5,
+    title: 'Sovereign object ontology and writeback layer',
+    summary: 'A Foundry-class object model for people-of-interest (lawful), vessels, assets, incidents, alerts and missions. Source systems stay authoritative; the twin resolves entities, stamps provenance, and writes decisions back into case, C2 and maintenance systems.',
+    what_it_solves: ['Agencies cannot share objects without pooling raw data', 'No provenance or confidence on claims', 'Analytics that cannot write back to operations'],
+    dependencies: ['Object-type owners in each agency', 'Identity and purpose-based access', 'Writeback contracts with source systems'],
+    components: ['Shared ontology (vessel, asset, incident, alert, patrol, survey)', 'Entity resolution with lineage', 'Action writeback adapters', 'Investigation and operations workbench'],
+    value: 'One operational picture with source authority preserved; analytics that change what crews actually do.',
+    owners: ['ONSA', 'NITDA', 'NIMASA', 'Police'],
+    vendors: ['TSL', 'neutral'],
+    icon: 'schema', tag: 'Ontology'
+  },
+    {
+    id: 'sol-22',
+    complexity: 5,
+    title: 'Deep-sea survey vessel acquisition (TSL-Colossus)',
+    summary: 'TSL-Colossus financed acquisition of a UNCLOS/CLCS-capable deep-sea survey vessel for NHA: $100–150M asset, 15–20% NHA commitment, interim capability in 4 months via NNS LANA rehabilitation, permanent hull in 12–24 months. Joint own / operate / maintain — not a one-off sale.',
+    what_it_solves: ['No sovereign deep-sea survey hull for ECS and rare-earth seabed work', 'Chartering is expensive and leaves no national asset', 'NNS LANA is dual-mission but currently not survey-ready'],
+    dependencies: ['NHA mandate and MoF guarantee path', 'Phase-1 joint condition assessment of NNS LANA', 'KONGSBERG OEM access for EM2040/EM304, SEAPATH, HIPAP'],
+    components: ['NNS LANA rehab as interim track (OCEA 60.1m, EM2040/EM304)', 'New-build or retrofit flagship (multibeam, SBP, SSS, DP, AUV/ROV LARS, onboard labs)', 'LTO / usage-aligned repayment (36–60 months)', 'Joint ops, maintenance and ENC revenue model'],
+    value: 'Interim survey in 4 months; flagship in 12–24 months; NHA owns the capability instead of renting it.',
+    owners: ['NHA', 'Navy', 'Ministry of Finance'],
+    vendors: ['TSL', 'KONGSBERG'],
+    icon: 'sailing', tag: 'Hydrography'
   }
-];
+];;
 
 export const offerings = [
   {
@@ -390,7 +429,8 @@ export const offerings = [
       ['Federated security data platform with Sovereign control','Zero-trust platform enabling collaboration without ceding source authority or personal-data control.'],
       ['Flood-readiness digital twin with early action','Aggregated forecast + service + logistics + shelter twin with pre-committed early-action funding.'],
       ['Evidence and chain-of-custody interoperability','Standards-based digital evidence, custody ledger and prosecution-file interfaces across agencies.'],
-      ['Sovereign AI lab and compute centre','On-soil AI compute facility for training, testing and validating sovereign models with controlled agency-data access and algorithmic oversight.']
+      ['Sovereign AI lab and compute centre','On-soil AI compute facility for training, testing and validating sovereign models with controlled agency-data access and algorithmic oversight.'],
+      ['Predictive policing and patrol optimisation','Risk scoring of place, time and route with named human authorisers, patrol solver and writeback into agency C2.']
     ]
   },
   {
@@ -400,7 +440,9 @@ export const offerings = [
       ['Federated National Resilience Twin','Federated decision platform across all six mission threads, mission-owned and TSL-operated.'],
       ['Command, control and coordination modernisation','Modernised federal/zonal coordination centres connecting picture, workflow and mission owners.'],
       ['AI assurance and trust office for security analytics','Governance function for algorithmic assistance via register, assessments, human review and recourse.'],
-      ['Autonomous drone airport facility','End-to-end verti-port for UAV takeoff, landing, charging and automated dispatch integrated with air-traffic coordination.']
+      ['Autonomous drone airport facility','End-to-end verti-port for UAV takeoff, landing, charging and automated dispatch integrated with air-traffic coordination.'],
+      ['Sovereign object ontology and writeback layer','Foundry-class object model with provenance and writeback so analytics change what crews actually do.'],
+      ['Deep-sea survey vessel acquisition (TSL-Colossus)','Financed UNCLOS/CLCS-capable flagship for NHA: interim via NNS LANA rehab in 4 months, permanent hull in 12–24.']
     ]
   }
 ];
@@ -413,7 +455,9 @@ export const vendorRows = [
   ['Digital twin & analytics','Maritime/industrial digital platforms and fleet data','Mission software, data processing and remote operations','National knowledge graph, sovereign integration and managed service'],
   ['Training & support','Global support, OEM training and simulators','Operator, hydrography, robotics and maintenance training','Local academy, competency records, depots and SLA governance'],
   ['Secure infrastructure','Sovereign hosting, API gateway, identity and audit','Mission-grade communications and edge compute','Field integration, maintenance and local lifecycle support'],
-  ['Governance & assurance','Standards-based, auditable integration and compliance','Trusted autonomy with human review and safety cases','Sovereign oversight, DPIA, records, redress and audit']
+  ['Governance & assurance','Standards-based, auditable integration and compliance','Trusted autonomy with human review and safety cases','Sovereign oversight, DPIA, records, redress and audit'],
+  ['Predictive ops & platform','C2 and MDA data feeds for pattern models','Mission software, data processing and remote operations','TSL ontology, writeback adapters and Nigerian field delivery'],
+  ['Deep-sea survey hull','EM2040/EM304, SBP, SSS, DP, AUV/ROV LARS','Inertial positioning for deep-water survey ops','TSL-Colossus finance, joint operations and NNS LANA rehab']
 ];
 
 // Richer knowledge graph.
@@ -447,6 +491,10 @@ export const graph = {
     ['AI assurance & trust office','service',810,510],
     ['AI surveillance & analytics','service',220,550],
     ['Autonomous drone airport','service',900,490],
+    ['Predictive policing & patrol optimisation','service',330,620],
+    ['Sovereign ontology & writeback','platform',560,120],
+    ['TSL-Colossus deep-sea vessel','service',120,250],
+    ['NNS LANA rehab track','service',60,340],
     // Agencies / owners
     ['NIMASA / Navy / NHA','agency',120,380],
     ['ONSA / Police / States','agency',500,550],
@@ -499,6 +547,23 @@ export const graph = {
     ['Autonomous drone airport','provides aerial sensing to','Border, coast & environmental crime'],
     ['Autonomous drone airport','extends','Maritime security & blue economy'],
     ['Autonomous drone airport','de-conflicts via','National Resilience Twin'],
+    // Ontology + predictive spine
+    ['Sovereign ontology & writeback','enables','Predictive policing & patrol optimisation'],
+    ['Sovereign ontology & writeback','enables','Evidence & chain of custody'],
+    ['Sovereign ontology & writeback','supports','National Resilience Twin'],
+    ['Predictive policing & patrol optimisation','supports','Community safety & kidnapping prevention'],
+    ['Predictive policing & patrol optimisation','supports','Border, coast & environmental crime'],
+    ['Predictive policing & patrol optimisation','supports','Maritime security & blue economy'],
+    ['AI surveillance & analytics','feeds','Predictive policing & patrol optimisation'],
+    ['Autonomous drone airport','feeds','Predictive policing & patrol optimisation'],
+    // Colossus hydrography track
+    ['TSL-Colossus deep-sea vessel','extends','Maritime security & blue economy'],
+    ['TSL-Colossus deep-sea vessel','supports','Cyber & information resilience'],
+    ['NNS LANA rehab track','interim for','TSL-Colossus deep-sea vessel'],
+    ['KONGSBERG','provides survey stack to','TSL-Colossus deep-sea vessel'],
+    ['KONGSBERG','equips','NNS LANA rehab track'],
+    ['TSL Logistics','finances','TSL-Colossus deep-sea vessel'],
+    ['TSL Logistics','operates','NNS LANA rehab track'],
     // Mission owners
     ['NIMASA / Navy / NHA','owns','Maritime security & blue economy'],
     ['NIMASA / Navy / NHA','owns','Maritime common picture'],
@@ -531,6 +596,9 @@ export const kpis = [
   ['Local capacity','Certified Nigerian roles able to operate and maintain services','≥ 70% by Phase 3'],
   ['Rights & trust','Substantiated access/control breaches and redress closure time','Zero severe; closure SLA tracked'],
   ['Interoperability','Priority interfaces passing conformance tests','100% before scale'],
+  ['Predictive tasking','Patrols and survey tasking written back from risk models with named human sign-off','100% of model-generated tasking authorised before dispatch'],
+  ['Platform spine','Priority object types with an agency owner and a writeback adapter','≥ 90% by Phase 2'],
+  ['Hydrography','NNS LANA Phase-1 assessment complete; interim survey capability live','Assessment ≤ 6 weeks; interim ≤ 4 months of award'],
   ['Economic value','Avoided downtime, survey vessel days and duplicated procurement','Audited benefit case annually']
 ];
 
@@ -538,7 +606,7 @@ export const guardrails = [
   ['Mission before data','Collect only what a defined, lawful public-safety or resilience service needs.'],
   ['Federated by default','Agencies retain source authority; share minimum necessary views and claims.'],
   ['Human accountability','Models advise. Named public officials authorise consequential action.'],
-  ['No predictive policing','Do not infer individual criminality from proxies, networks, ethnicity, religion or location.'],
+  ['Accountable predictive tasking','Models score place, time and route. Named officials authorise every tasking. Overrides logged. No automated arrest or enforcement.'],
   ['Provenance and confidence','Every claim shows source, timestamp, quality, transformation and confidence.'],
   ['Role and purpose controls','Attribute- and purpose-based access, strong authentication and recurring recertification.'],
   ['Retention and deletion','Time-bound records schedules, legal holds, verified deletion and immutable access logs.'],
@@ -548,6 +616,8 @@ export const guardrails = [
 ];
 
 export const sources = [
+  {tag:'TSL-Colossus confidential',private:true,title:'Securing Nigeria\u2019s Advanced Hydrographic Future',org:'TSL-Colossus Consortium',url:'',note:'Private client proposal: financed deep-sea survey vessel ($100\u2013150M asset, 15\u201320% NHA commitment, LTO 36\u201360 months, interim capability in 4 months). Treated as proposal assertions, not agreed terms.'},
+  {tag:'TSL-Colossus confidential',private:true,title:'NNS Lana Rehabilitation Proposal',org:'TSL-Colossus Consortium',url:'',note:'Private client proposal: NNS LANA (OCEA 2018, 60.1m, EM2040/EM304, SEAPATH 380-5, HIPAP) rehabilitation as the interim hydrography track \u2014 joint condition assessment 4\u20136 weeks before any repair cost.'},
   {tag:'Nigeria policy',title:'National Security Strategy 2019',org:'Federal Republic of Nigeria / NCTC',url:'https://nctc.gov.ng/storage/2024/01/NSS-2019.pdf',note:'Sets comprehensive security objectives, inter-agency implementation and measurable outcomes.'},
   {tag:'Nigeria maritime',title:'Deep Blue Project launch and asset model',org:'NIMASA',url:'https://nimasa.gov.ng/president-buhari-launches-deep-blue-project-in-lagos/',note:'Documents Nigeria’s integrated land, sea, air and C4i maritime-security foundation.'},
   {tag:'Nigeria hydrography',title:'National Hydrographic Agency survey fleet',org:'NHA',url:'https://nha.gov.ng/survey-fleet/',note:'Documents NNS LANA, NNS OCHUZO, survey launches and existing KONGSBERG multibeam systems.'},
@@ -568,7 +638,9 @@ export const sources = [
 export const assumptions = [
   'This prototype uses no live operational feed, classified source, personal record or precise critical-asset location.',
   'Zone scores are illustrative planning indices derived from public qualitative themes, not measured threat probabilities.',
+  'Predictive policing and surveillance analytics are internal offer options: models score place, time and route; named officials authorise every tasking; overrides are logged. No automated arrest or enforcement.',
+  'TSL-Colossus figures (asset value, commitment %, timelines, ENC revenue) are proposal assertions from the two consortium documents, not agreed contract terms. They require NHA and Ministry of Finance discovery.',
   'Product references describe documented vendor capabilities; all Nigeria-specific combinations are TSL strategic proposals subject to discovery, export controls and procurement.',
-  'The two named TSL consortium PDFs were not present in the accessible local folders; their content has not been represented as reviewed.',
+  'The two TSL consortium documents were ingested as pasted extracts, not reviewed as original signed PDFs.',
   'Any production system requires agency mandate, legal review, DPIA, cyber accreditation, data-sharing agreements and independent safeguards assurance.'
 ];
