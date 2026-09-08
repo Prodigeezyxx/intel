@@ -33,13 +33,13 @@ test.describe("TSL National Resilience Twin", () => {
 
   test("solutions catalogue filters by complexity", { timeout: 60000 }, async ({ page }) => {
     await page.goto("/#solutions", { waitUntil: "networkidle" });
-    await expect(page.locator(".solution-card")).toHaveCount(16, { timeout: 15000 });
+    await expect(page.locator(".solution-card")).toHaveCount(17, { timeout: 15000 });
     await page.getByRole("button", { name: "Complexity 1" }).click();
     await expect(page.locator(".solution-card")).toHaveCount(2);
     await page.getByRole("button", { name: "Complexity 5" }).click();
     await expect(page.locator(".solution-card")).toHaveCount(3);
     await page.getByRole("button", { name: "All complexity" }).click();
-    await expect(page.locator(".solution-card")).toHaveCount(16);
+    await expect(page.locator(".solution-card")).toHaveCount(17);
   });
 
   test("offer tabs, graph, sources and theme are interactive", { timeout: 90000 }, async ({ page }) => {

@@ -311,6 +311,19 @@ export const solutionCatalogue = [
     owners: ['ONSA', 'Nigerian Data Protection Commission', 'Civil society'],
     vendors: ['TSL', 'neutral'],
     icon: 'psychology', tag: 'Governance'
+  },
+  {
+    id: 'sol-17',
+    complexity: 4,
+    title: 'Sovereign AI lab and compute centre',
+    summary: 'On-soil AI compute and experimentation facility for training, testing and validating sovereign models, with controlled access to agency data and algorithmic oversight.',
+    what_it_solves: ['AI capability depends on foreign cloud', 'No controlled environment for model training', 'Untrusted data flows into model development'],
+    dependencies: ['Power/resilient infrastructure', 'Approved data-sharing protocols', 'Staff with security clearance'],
+    components: ['On-prem GPU/TPU racks', 'Secure data enclave with isolation', 'Model training and evaluation pipelines', 'Experiment tracking and lineage'],
+    value: 'Reduced reliance on foreign infrastructure; auditable AI development; faster model iteration.',
+    owners: ['Nigerian Army Intelligence', 'NITDA', 'ONSA'],
+    vendors: ['TSL', 'neutral'],
+    icon: 'smart_toy', tag: 'AI capability'
   }
 ];
 
@@ -349,7 +362,8 @@ export const offerings = [
       ['Autonomous hydrographic survey service','Outcome-based USV campaigns using DriX and KONGSBERG sonar, IHO-compliant, building local capability.'],
       ['Federated security data platform with Sovereign control','Zero-trust platform enabling collaboration without ceding source authority or personal-data control.'],
       ['Flood-readiness digital twin with early action','Aggregated forecast + service + logistics + shelter twin with pre-committed early-action funding.'],
-      ['Evidence and chain-of-custody interoperability','Standards-based digital evidence, custody ledger and prosecution-file interfaces across agencies.']
+      ['Evidence and chain-of-custody interoperability','Standards-based digital evidence, custody ledger and prosecution-file interfaces across agencies.'],
+      ['Sovereign AI lab and compute centre','On-soil AI compute facility for training, testing and validating sovereign models with controlled agency-data access and algorithmic oversight.']
     ]
   },
   {
