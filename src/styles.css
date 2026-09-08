@@ -166,8 +166,8 @@ h3 { font-size:16px; letter-spacing:-.015em; margin-bottom:8px; }
 .solution-spec div ul { margin:0; padding-left:20px; font-size:13px; }
 .solution-spec p.lede { margin:0; font-size:14px; }
 .offering-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
-.tab-button { min-height:44px; padding:0 15px; border:1px solid var(--md-sys-color-outline-variant); border-radius:14px; background:transparent; cursor:pointer; display:flex; align-items:center; gap:8px; font-weight:700; }
-.tab-button.active { background:var(--md-sys-color-secondary-container); border-color:transparent; }
+.tab-button { min-height:44px; padding:0 15px; border:1px solid var(--md-sys-color-outline-variant); border-radius:14px; background:transparent; cursor:pointer; display:flex; align-items:center; gap:8px; font-weight:700; border-bottom:2px solid transparent; transition:border-color .2s; }
+.tab-button.active { border-bottom-color:var(--md-sys-color-primary); color:var(--md-sys-color-on-surface); }
 .offer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .offer-item { padding:18px; background:var(--md-sys-color-surface-container); border-radius:18px; }
 .offer-item .num { display:block; font-size:11px; color:var(--md-sys-color-primary); font-weight:800; margin-bottom:14px; }
