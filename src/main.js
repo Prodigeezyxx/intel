@@ -1,7 +1,7 @@
 import {zones,zoneProfiles,missions,solutionCatalogue,offerings,vendorRows,graph,roadmap,kpis,guardrails,sources,assumptions} from './data.js';
 
 const nav=[
-  ['overview','dashboard','National twin'],['missions','crisis_alert','Mission threads'],['solutions','widgets_diagnostics','Solutions catalogue'],['offerings','deployed_code','Offer portfolio'],['graph','hub','Knowledge graph'],['roadmap','conversion_path','Roadmap'],['governance','policy','Governance'],['sources','library_books','Sources']
+  ['overview','dashboard','National twin'],['missions','crisis_alert','Mission threads'],['solutions','inventory_2','Solutions catalogue'],['offerings','deployed_code','Offer portfolio'],['graph','hub','Knowledge graph'],['roadmap','conversion_path','Roadmap'],['governance','policy','Governance'],['sources','library_books','Sources']
 ];
 
 const state={
