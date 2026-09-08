@@ -157,8 +157,9 @@ h3 { font-size:16px; letter-spacing:-.015em; margin:0; }
 .solution-card.mini h3 { font-size:12px; margin:0; }
 .solution-card.mini small { color:var(--md-sys-color-on-surface-variant); font-size:10px; }
 .solution-card.mini[aria-disabled="true"] { opacity:.55; cursor:default; }
-.solution-meta { display:grid; gap:12px; grid-template-columns:1fr 1fr; font-size:11px; }
-.solution-meta ul { margin:0; padding-left:18px; }
+.solution-meta { display:grid; gap:12px; grid-template-columns:1fr; font-size:11px; }
+.solution-meta ul { margin:0; padding-left:10px; color:var(--md-sys-color-on-surface-variant); font-size:11px; display:grid; gap:5px; list-style:none; }
+.solution-meta ul li { display:block; margin:0; padding:0; }
 .solution-detail { padding:22px; background:var(--md-sys-color-surface-container); border-radius:20px; display:flex; flex-direction:column; gap:14px; }
 .solution-detail .solution-icon { width:44px; height:44px; }
 .solution-detail .num { font-size:11px; color:var(--md-sys-color-primary); font-weight:800; }
