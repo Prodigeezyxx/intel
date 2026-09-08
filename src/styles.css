@@ -146,7 +146,7 @@ h3 { font-size:14px; letter-spacing:-.015em; margin:0; line-height:1.3; }
 .mission-card .arrow { margin-top:auto; display:flex; align-items:center; gap:6px; color:var(--accent); font-weight:750; font-size:11px; }
 .mission-detail { margin-top:16px; padding:22px; background:var(--md-sys-color-surface-container); border-radius:20px; display:none; }
 .mission-detail.open { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
-.solution-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
+.solution-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:10px; }
 .solution-card { padding:18px; background:var(--md-sys-color-surface-container); border-radius:18px; border:2px solid var(--md-sys-color-outline-variant); transition:border-color .2s; cursor:pointer; position:relative; overflow:hidden; display:flex; flex-direction:column; gap:10px; min-width:0; }
 .solution-card:hover { border-color:var(--accent); box-shadow:var(--shadow); }
 .solution-card::before { content:""; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--accent); }
