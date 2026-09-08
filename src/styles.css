@@ -106,8 +106,9 @@ h3 { font-size:16px; letter-spacing:-.015em; margin-bottom:8px; }
 .panel-title strong { display:block; font-size:14px; }
 .panel-title span { display:block; color:var(--md-sys-color-on-surface-variant); font-size:11px; }
 .segmented { display:flex; padding:3px; gap:2px; border-radius:10px; background:var(--md-sys-color-surface-container-high); }
-.segmented button { border:0; background:transparent; min-height:32px; padding:0 10px; border-radius:8px; color:var(--md-sys-color-on-surface-variant); cursor:pointer; font-size:11px; font-weight:700; border-bottom:2px solid transparent; transition:border-color .2s; }
-.segmented button.active { border-bottom-color:var(--md-sys-color-primary); color:var(--md-sys-color-on-surface); }
+.segmented button { border:0; background:transparent; min-height:32px; padding:0 10px; border-radius:8px; color:var(--md-sys-color-on-surface-variant); cursor:pointer; font-size:11px; font-weight:700; position:relative; transition:color .2s; }
+.segmented button.active { color:var(--md-sys-color-on-surface); }
+.segmented button.active::after { content:""; position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:90%; height:2px; background:var(--md-sys-color-primary); }
 .map-wrap { position:relative; min-height:620px; display:grid; place-items:center; background:radial-gradient(circle at 52% 45%, color-mix(in srgb,var(--md-sys-color-primary) 8%,transparent),transparent 48%); }
 #nigeria-map { width:100%; height:620px; }
 .state { stroke:var(--md-sys-color-surface); stroke-width:.7; cursor:pointer; transition:opacity .16s,stroke-width .16s,filter .16s; vector-effect:non-scaling-stroke; }
@@ -166,8 +167,9 @@ h3 { font-size:16px; letter-spacing:-.015em; margin-bottom:8px; }
 .solution-spec div ul { margin:0; padding-left:20px; font-size:13px; }
 .solution-spec p.lede { margin:0; font-size:14px; }
 .offering-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
-.tab-button { min-height:44px; padding:0 15px; border:1px solid var(--md-sys-color-outline-variant); border-radius:14px; background:transparent; cursor:pointer; display:flex; align-items:center; gap:8px; font-weight:700; border-bottom:2px solid transparent; transition:border-color .2s; }
-.tab-button.active { border-bottom-color:var(--md-sys-color-primary); color:var(--md-sys-color-on-surface); }
+.tab-button { min-height:44px; padding:0 15px; border:1px solid var(--md-sys-color-outline-variant); border-radius:14px; background:transparent; cursor:pointer; display:flex; align-items:center; gap:8px; font-weight:700; position:relative; transition:color .2s; }
+.tab-button.active { color:var(--md-sys-color-on-surface); }
+.tab-button.active::after { content:""; position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:90%; height:2px; background:var(--md-sys-color-primary); }
 .offer-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .offer-item { padding:18px; background:var(--md-sys-color-surface-container); border-radius:18px; }
 .offer-item .num { display:block; font-size:11px; color:var(--md-sys-color-primary); font-weight:800; margin-bottom:14px; }
