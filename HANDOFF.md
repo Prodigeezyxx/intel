@@ -15,7 +15,7 @@ Core proposition: TSL becomes the Nigerian sovereign integrator and lifecycle op
 ## Files
 
 - `index.html` — shell, pre-paint theme, fonts and entrypoint.
-- `src/main.js` — render functions, navigation, map projection, interactions, graph and exports.
+- `src/main.js` — render functions, navigation, map projection, interactions, graph, exports. `execBrief()`, `renderSolutions()`, `inspectSolution()` (back-to-catalogue button included).
 - `src/data.js` — single content source for zones, missions, offerings, partner matrix, roadmap, KPIs, guardrails and evidence register.
 - `src/styles.css` — M3-inspired visual system, desktop/mobile/print layouts.
 - `public/nigeria-states.geojson` — simplified CC BY 4.0 ADM1 boundary geometry from geoBoundaries/GRID3.
@@ -34,18 +34,12 @@ Core proposition: TSL becomes the Nigerian sovereign integrator and lifecycle op
 
 ## Required reconciliation
 
-The following referenced documents were not present in accessible local folders and have **not** been represented as reviewed:
+The two referenced TSL-Colossus documents have been ingested as pasted extracts (confidential, not original signed PDFs):
 
-1. `NNS Lana Rehabilitation Proposal - TSL Colossus Consortium.pdf`
-2. `Securing_Nigeria's_Advanced_Hydrographic_Future_TSL_Consortium.pdf`
+1. `NNS Lana Rehabilitation Proposal - TSL Colossus Consortium.pdf` — interim hydrography track.
+2. `Securing_Nigeria's_Advanced_Hydrographic_Future_TSL_Consortium.pdf` — financed flagship track.
 
-When received:
-
-1. Extract scope, named systems, technical findings, consortium roles, cost assumptions and commitments.
-2. Separate verified vessel facts from proposal assertions.
-3. Compare proposed rehabilitation work with an OEM-led NNS LANA health/obsolescence assessment.
-4. Reconcile duplicates and conflicts into `STRATEGY.md` and `src/data.js`.
-5. Add both documents to the source register as private client inputs; do not publish them in `public/` without permission.
+Both are now represented in `src/data.js` (sol-22, graph, sources as private client inputs) and `STRATEGY.md`. When originals arrive, verify vessel facts, figures and consortium roles against the extracts; do not publish either document in `public/`.
 
 ## Safety and governance boundary
 

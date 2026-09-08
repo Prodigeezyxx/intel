@@ -36,4 +36,4 @@ This is a strategic prototype. It contains no live operational feed, classified 
 
 ## Missing source documents
 
-The two referenced TSL consortium PDFs were not found in the accessible local folders during the build. Their content has not been represented as reviewed. Reconcile them into `STRATEGY.md` and the source register when supplied.
+The two referenced TSL consortium papers were ingested as pasted extracts and are represented as private client inputs in the data layer and `STRATEGY.md`. The original PDFs have not been reviewed: verify vessel facts and commercial figures against the originals when supplied.

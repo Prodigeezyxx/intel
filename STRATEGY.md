@@ -2,11 +2,13 @@
 
 ## Executive proposition
 
-TSL Logistics should position itself as Nigeria’s sovereign delivery and lifecycle integrator for a federated homeland-security resilience platform. The offer should strengthen existing public programmes and statutory owners rather than create a duplicate command structure.
+TSL Logistics should position itself as Nigeria's sovereign delivery and lifecycle integrator for a full security-technology stack: federated data, predictive tasking, maritime and hydrographic capability, and the platform spine that connects them.
+
+The platform spine is a sovereign object ontology with provenance and writeback: vessels, assets, incidents, alerts, patrols and surveys are resolved as shared objects, source systems stay authoritative, and every model output (risk scores, patrol plans, maintenance jobs) writes back into the systems crews actually operate. Predictive policing is offered as accountable predictive tasking: models score place, time and route; named officials authorise every dispatch; every override is logged; there is no automated arrest or use of force.
 
 KONGSBERG is the Norwegian technology anchor for integrated maritime surveillance, hydrography, autonomous underwater survey, subsea inspection and maritime decision support. Exail is the advanced-technology anchor for supervised autonomous surface systems, inertial navigation, subsea positioning, sonar and remote hydrographic operations. TSL owns the Nigerian layer: programme integration, infrastructure operations, logistics, HSSEQ, data stewardship, maintenance, local workforce transfer, service levels and benefits realisation.
 
-This is a defensive, civilian-protection and critical-infrastructure strategy. It does not include weapons, targeting, precise vulnerability mapping, personal tracking, predictive policing or autonomous enforcement.
+This is a defensive security-technology strategy. It excludes weapons and autonomous use of force; predictive analytics and tasking are always authorised by named officials, with override logs, model registers and external audit.
 
 ## Why this fits TSL
 
@@ -41,11 +43,11 @@ The commercial differentiation is not a reseller relationship. It is an accounta
 
 - Federated, minimum-necessary incident exchange among authorised agencies.
 - Offline-first, protected public reporting and verified referral workflow.
+- Predictive patrol tasking: place/time/route risk scoring with named human authorisers and a full override log, written back into agency C2.
 - Resilient emergency communications and backup power.
 - School and public-facility safety-readiness assessments.
 - Evidence, chain-of-custody and prosecution-readiness interfaces.
 - Victim-support referral coordination.
-- No facial-recognition dragnet, social scoring or predictive policing.
 
 ### 4. Disaster and climate resilience
 
@@ -141,6 +143,14 @@ The commercial differentiation is not a reseller relationship. It is an accounta
 
 Vendor product references are documented capabilities. Their combination into Nigerian services is a TSL proposal and remains subject to requirements discovery, export controls, procurement, accreditation and vendor confirmation.
 
+## Hydrography track (TSL-Colossus)
+
+One partnership, two tracks, from the TSL-Colossus consortium papers:
+
+- Track 1 — NNS LANA rehabilitation as the interim survey asset. OCEA SA (2018), 60.10 m aluminium hull, 36–50 crew, NAVIS DP, Kongsberg EM2040 + EM304 multibeam, SEAPATH 380-5, HIPAP C-Node. Joint condition assessment runs 4–6 weeks; no repair cost is committed until the assessment is complete. This avoids chartering a replacement while the permanent hull is delivered.
+- Track 2 — financed deep-sea survey flagship. UNCLOS/CLCS-capable new build (18–24 months) or retrofit (12–18 months) with multibeam, sub-bottom profiler, side-scan sonar, dynamic positioning, AUV/ROV launch-and-recovery and onboard data laboratories. $100–150M asset, fully financed by the consortium against a 15–20% NHA commitment, LTO tenor 36–60 months, ownership transferring on satisfaction.
+- All dollar figures are proposal assertions from the confidential papers, not agreed terms. They are subject to NHA and Ministry of Finance discovery and are shown here as the consortium's own claim.
+
 ## First 90 days
 
 ### Workstream A — mandate and baseline
@@ -190,7 +200,7 @@ No unvalidated budget figures are included. A cost envelope should follow techni
 1. Mission before data collection.
 2. Federated source authority and minimum-necessary sharing.
 3. Named human accountability for consequential decisions.
-4. No predictive policing or sensitive-trait inference.
+4. Accountable predictive tasking: place/time/route scoring, named human authorisers, full override log. No automated arrest or use of force.
 5. Provenance, timestamp, transformation and confidence for every material claim.
 6. Purpose- and attribute-based access with regular recertification.
 7. Time-bound retention, legal hold and verified deletion.
