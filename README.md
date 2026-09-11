@@ -24,7 +24,7 @@ npm run preview
 - Interactive Nigeria state map using local CC BY 4.0 geoBoundaries/GRID3 geometry.
 - Six defensive homeland-security and resilience mission threads.
 - Grouped infrastructure, consultancy, technology and managed-service offerings.
-- KONGSBERG / Exail / TSL capability matrix.
+- TSL + Partners / TSL + Partners / TSL capability matrix.
 - Interactive knowledge graph.
 - Phased roadmap, governance guardrails, KPIs and cited public-source register.
 - Light/dark themes, responsive navigation, keyboard access and print/PDF support.

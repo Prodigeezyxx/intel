@@ -8,9 +8,9 @@ The project is a Vite-powered, framework-free interactive dashboard. It is inten
 
 Primary surface: **Monitor**. Secondary surface: **Explore**.
 
-Audience: TSL Logistics executives, Nigerian public-sector decision makers and prospective KONGSBERG/Exail partners.
+Audience: TSL Logistics executives, Nigerian public-sector decision makers and prospective TSL + Partners/TSL + Partners partners.
 
-Core proposition: TSL becomes the Nigerian sovereign integrator and lifecycle operator; KONGSBERG and Exail provide complementary documented technologies; mission-owning public bodies retain statutory authority and source-data ownership.
+Core proposition: TSL becomes the Nigerian sovereign integrator and lifecycle operator; TSL + Partners and TSL + Partners provide complementary documented technologies; mission-owning public bodies retain statutory authority and source-data ownership.
 
 ## Files
 

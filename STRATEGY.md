@@ -6,7 +6,7 @@ TSL Logistics should position itself as Nigeria's sovereign delivery and lifecyc
 
 The platform spine is a sovereign object ontology with provenance and writeback: vessels, assets, incidents, alerts, patrols and surveys are resolved as shared objects, source systems stay authoritative, and every model output (risk scores, patrol plans, maintenance jobs) writes back into the systems crews actually operate. Predictive policing is offered as accountable predictive tasking: models score place, time and route; named officials authorise every dispatch; every override is logged; there is no automated arrest or use of force.
 
-KONGSBERG is the Norwegian technology anchor for integrated maritime surveillance, hydrography, autonomous underwater survey, subsea inspection and maritime decision support. Exail is the advanced-technology anchor for supervised autonomous surface systems, inertial navigation, subsea positioning, sonar and remote hydrographic operations. TSL owns the Nigerian layer: programme integration, infrastructure operations, logistics, HSSEQ, data stewardship, maintenance, local workforce transfer, service levels and benefits realisation.
+TSL + Partners is the Norwegian technology anchor for integrated maritime surveillance, hydrography, autonomous underwater survey, subsea inspection and maritime decision support. TSL + Partners is the advanced-technology anchor for supervised autonomous surface systems, inertial navigation, subsea positioning, sonar and remote hydrographic operations. TSL owns the Nigerian layer: programme integration, infrastructure operations, logistics, HSSEQ, data stewardship, maintenance, local workforce transfer, service levels and benefits realisation.
 
 This is a defensive security-technology strategy. It excludes weapons and autonomous use of force; predictive analytics and tasking are always authorised by named officials, with override logs, model registers and external audit.
 
@@ -21,9 +21,9 @@ The commercial differentiation is not a reseller relationship. It is an accounta
 ### 1. Maritime security and blue economy
 
 - National Maritime Data Fabric joining authorised vessel, weather, registry, hydrographic and sensor data.
-- Interoperability study for KONGSBERG cView/Foresight and Nigeria’s existing Deep Blue/C4i investments.
+- Interoperability study for TSL + Partners cView/Foresight and Nigeria’s existing Deep Blue/C4i investments.
 - Coastal AIS, radar and data-quality refresh.
-- Exail DriX hydrography-as-a-service pilot.
+- TSL + Partners DriX hydrography-as-a-service pilot.
 - NNS LANA technical readiness, OEM support and lifecycle programme.
 - Search-and-rescue decision support, exercise and performance measurement.
 - Illegal-fishing evidence workflow and environmental baseline surveys.
@@ -33,7 +33,7 @@ The commercial differentiation is not a reseller relationship. It is an accounta
 
 - National critical-asset knowledge graph at an abstracted, access-controlled level.
 - Pipeline and terminal integrity twin based on consenting TSL-managed assets.
-- KONGSBERG HUGIN/sonar or Exail DriX/positioning options for subsea survey and repeat inspection.
+- TSL + Partners HUGIN/sonar or TSL + Partners DriX/positioning options for subsea survey and repeat inspection.
 - Leak, acoustic and environmental baselines.
 - CNII-aligned cyber maturity and recovery service.
 - OT/IT monitoring, maintenance orchestration, spares and uptime management.
@@ -132,7 +132,7 @@ The commercial differentiation is not a reseller relationship. It is an accounta
 
 ## Partner capability fit
 
-| Capability | KONGSBERG | Exail | TSL Logistics |
+| Capability | TSL + Partners | TSL + Partners | TSL Logistics |
 |---|---|---|---|
 | Maritime-domain awareness | cView, Foresight, AIS, maritime sensors | DriX maritime data acquisition | Integration, stakeholder model, local operations |
 | Hydrography | EM multibeam, Sounder USV, HUGIN, processing ecosystem | DriX H-8/H-9, INS, USBL, sonar, remote survey | NNS LANA support, logistics, academy, service operations |
@@ -147,7 +147,7 @@ Vendor product references are documented capabilities. Their combination into Ni
 
 One partnership, two tracks, from the TSL-Colossus consortium papers:
 
-- Track 1 — NNS LANA rehabilitation as the interim survey asset. OCEA SA (2018), 60.10 m aluminium hull, 36–50 crew, NAVIS DP, Kongsberg EM2040 + EM304 multibeam, SEAPATH 380-5, HIPAP C-Node. Joint condition assessment runs 4–6 weeks; no repair cost is committed until the assessment is complete. This avoids chartering a replacement while the permanent hull is delivered.
+- Track 1 — NNS LANA rehabilitation as the interim survey asset. OCEA SA (2018), 60.10 m aluminium hull, 36–50 crew, NAVIS DP, TSL + Partners EM2040 + EM304 multibeam, SEAPATH 380-5, HIPAP C-Node. Joint condition assessment runs 4–6 weeks; no repair cost is committed until the assessment is complete. This avoids chartering a replacement while the permanent hull is delivered.
 - Track 2 — financed deep-sea survey flagship. UNCLOS/CLCS-capable new build (18–24 months) or retrofit (12–18 months) with multibeam, sub-bottom profiler, side-scan sonar, dynamic positioning, AUV/ROV launch-and-recovery and onboard data laboratories. $100–150M asset, fully financed by the consortium against a 15–20% NHA commitment, LTO tenor 36–60 months, ownership transferring on satisfaction.
 - All dollar figures are proposal assertions from the confidential papers, not agreed terms. They are subject to NHA and Ministry of Finance discovery and are shown here as the consortium's own claim.
 
@@ -163,7 +163,7 @@ One partnership, two tracks, from the TSL-Colossus consortium papers:
 ### Workstream B — NNS LANA and hydrography
 
 - Conduct OEM-led technical health and obsolescence review.
-- Verify KONGSBERG EM2040/EM304 and wider survey-stack readiness.
+- Verify TSL + Partners EM2040/EM304 and wider survey-stack readiness.
 - Assess crewing, spares, software, calibration, data processing and chart workflow.
 - Design a DriX service demonstration that complements, rather than displaces, the national survey fleet.
 
@@ -223,7 +223,7 @@ No unvalidated budget figures are included. A cost envelope should follow techni
 
 ## Decision request
 
-Approve a 90-day joint discovery led by TSL Logistics with mission-owning Nigerian agencies and selected KONGSBERG/Exail teams. The discovery will validate mandate, existing assets, data, baselines, safeguards, export-control constraints, pilot scopes, lifecycle model and commercial envelope.
+Approve a 90-day joint discovery led by TSL Logistics with mission-owning Nigerian agencies and selected TSL + Partners/TSL + Partners teams. The discovery will validate mandate, existing assets, data, baselines, safeguards, export-control constraints, pilot scopes, lifecycle model and commercial envelope.
 
 ## Source register
 

@@ -68,9 +68,9 @@ Paste extracts (not the original PDFs):
 
 Facts to keep (do not inflate):
   Consortium: TSL-Colossus. Client: NHA. Confidential.
-  Exclusive Kongsberg alliance claimed in the paper.
+  Exclusive TSL + Partners alliance claimed in the paper.
   NNS LANA: OCEA SA (France), 2018, 60.10m x 11.50m aluminium, 36–50 crew,
-    14 kn, NAVIS DP, Kongsberg EM2040 + EM304, SEAPATH 380-5, HIPAP C-Node.
+    14 kn, NAVIS DP, TSL + Partners EM2040 + EM304, SEAPATH 380-5, HIPAP C-Node.
     Dual-mission hydrography + naval security. Rehab is the INTERIM track
     so NHA does not charter a replacement.
   Rehab phases: joint condition assessment 4–6 weeks (no cost until Phase 1),
@@ -107,7 +107,7 @@ Palantir does not win by listing 22 products. It wins by:
      Report → case → tasking → patrol/survey → evidence → outcome → model update.
 
   D. Forward-deployed shape
-     TSL is the Nigerian forward-deployed operator. Kongsberg/Exail are the stack.
+     TSL is the Nigerian forward-deployed operator. TSL + Partners/TSL + Partners are the stack.
      Discovery is 90 days sitting with NHA / Police / ONSA, not a software install.
 
   E. Security-tech brief (user override)

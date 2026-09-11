@@ -57,11 +57,11 @@ test.describe("TSL National Resilience Twin", () => {
     await page.getByRole("button", { name: "Knowledge graph" }).click();
     await expect(page.locator(".node")).toHaveCount(34, { timeout: 15000 });
     await page.locator(".node").nth(4).click();
-    await expect(page.locator("#graph-inspector")).toContainText("KONGSBERG");
+    await expect(page.locator("#graph-inspector")).toContainText("TSL + Partners");
 
     await page.getByRole("button", { name: "Sources" }).click();
     await expect(page.locator(".source-card")).toHaveCount(17);
-    await page.locator("#source-search").fill("Exail");
+    await page.locator("#source-search").fill("TSL + Partners");
     await expect(page.locator(".source-card")).toHaveCount(3);
 
     const before = await page.locator("html").getAttribute("data-theme");

@@ -28,7 +28,7 @@ function shell(){
     </aside>
     <div class="content-shell">
       <header class="topbar"><button class="icon-button mobile-menu" id="menu" aria-label="Open navigation">${icon('menu')}</button>
-      <div class="page-title"><strong id="top-title">National twin</strong><span>Prepared by TSL Logistics • KONGSBERG + Exail opportunity architecture</span></div>
+      <div class="page-title"><strong id="top-title">National twin</strong><span>Prepared by TSL Logistics</span></div>
       <div class="top-actions"><span class="status-chip"><i class="status-dot"></i>Illustrative strategic model</span>
         <button class="icon-button" id="brief" aria-label="Open executive brief">${icon('description')}</button>
         <button class="icon-button" id="theme" aria-label="Toggle colour theme">${icon('contrast')}</button></div></header>
@@ -74,7 +74,7 @@ function overviewView(){
     <article class="panel activity"><div class="panel-title"><strong>Architecture at a glance</strong><span>Full stack from mission to capability to integrator</span></div>
       <div class="legend-list"><div><strong>Mission owners</strong><span>Retain statutory authority and source data</span></div>
       <div><strong>TSL Logistics</strong><span>Integration, local operations and accountability</span></div>
-      <div><strong>KONGSBERG / Exail</strong><span>Complementary maritime, hydrographic and sensing technologies</span></div>
+      <div><strong>TSL and partners</strong><span>Complementary maritime, hydrographic and sensing technologies</span></div>
       <div><strong>Platforms</strong><span>Federated data and decision support, mission-owned</span></div></div></article>
   </div>
 </section>`;
@@ -106,8 +106,8 @@ function offeringsView(){
   `<div class="offering-tabs" role="tablist">`+
   offerings.map((g,i)=>`<button class="tab-button ${i===0?'active':''}" data-offer="${i}" role="tab" aria-selected="${i===0}">${icon(g.icon)}${g.group}</button>`).join('')+
   `</div><div class="grid offer-grid" id="offer-grid"></div>
-  <div class="section-head" style="margin-top:34px"><div><div class="eyebrow">Partner fit</div><h2>One integrator, two complementary technology anchors</h2><p class="lede">TSL owns Nigerian delivery, asset operations and lifecycle accountability; KONGSBERG anchors integrated sensing and maritime systems; Exail adds advanced robotics, navigation and remote hydrographic survey.</p></div></div>
-  <div class="matrix-wrap"><table><thead><tr><th>Capability</th><th><span class="vendor-mark">KONGSBERG</span></th><th><span class="vendor-mark">Exail</span></th><th><span class="vendor-mark">TSL Logistics</span></th></tr></thead><tbody>`+
+  <div class="section-head" style="margin-top:34px"><div><div class="eyebrow">Partner fit</div><h2>One integrator, two complementary technology anchors</h2><p class="lede">TSL owns Nigerian delivery, asset operations and lifecycle accountability; partners anchor integrated sensing and maritime systems and add advanced robotics, navigation and remote hydrographic survey.</p></div></div>
+  <div class="matrix-wrap"><table><thead><tr><th>Capability</th><th><span class="vendor-mark">Partner A</span></th><th><span class="vendor-mark">Partner B</span></th><th><span class="vendor-mark">TSL Logistics</span></th></tr></thead><tbody>`+
   vendorRows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')+
   `</tbody></table></div></section>`;
 }
@@ -152,8 +152,8 @@ function sourcesView(){
 
 const nodeInfo={
   "TSL Logistics":['Prime integrator','Owns Nigerian service design, systems integration, HSSEQ, field logistics, lifecycle support, local workforce development, service levels and benefits reporting.'],
-  "KONGSBERG":['Technology anchor','Documented strengths in maritime surveillance, cView/Foresight, AIS, hydrography (EM multibeam, HUGIN, Sounder), sonar, subsea inspection and lifecycle support.'],
-  "Exail":['Advanced technology anchor','Documented strengths in DriX supervised autonomy, hydrography, inertial navigation, subsea positioning, sonar and remote survey operations.'],
+  "TSL + Partners":['Technology anchor','Documented strengths in maritime surveillance, cView/Foresight, AIS, hydrography (EM multibeam, HUGIN, Sounder), sonar, subsea inspection and lifecycle support.'],
+  "TSL + Partners":['Advanced technology anchor','Documented strengths in DriX supervised autonomy, hydrography, inertial navigation, subsea positioning, sonar and remote survey operations.'],
   "National Resilience Twin":['Federated decision platform','A knowledge-and-workflow layer over authorised source systems; exposes provenance, confidence and accountable ownership across all mission threads.'],
   "Knowledge & Scenario Graph":['Cross-mission model','Links missions, services, assets, dependencies and outcomes with provenance so planners can rehearse scenarios without exposing personal data.'],
   "Federated Security Data Platform":['Sovereign data layer','Zero-trust platform letting agencies collaborate without ceding source authority or personal-data control.'],
@@ -171,10 +171,10 @@ function execBrief(){
   const predictive=solutionCatalogue.find(s=>s.id==="sol-20");
   return [
     "TSL LOGISTICS - NIGERIA NATIONAL RESILIENCE TWIN",
-    "High-level strategy foundation | KONGSBERG + Exail + TSL-Colossus opportunity architecture",
+    "High-level strategy foundation for TSL + Partners opportunity architecture",
     "",
     "PROPOSITION",
-    "Position TSL Logistics as Nigeria's sovereign integrator and lifecycle operator for a full security-technology stack. KONGSBERG provides integrated maritime sensing, hydrography, autonomous underwater survey and decision support; Exail provides supervised autonomy, inertial navigation, subsea positioning and remote hydrographic operations. TSL owns the Nigerian layer and the TSL-Colossus vehicle finances sovereign survey capability.",
+    "Position TSL Logistics as Nigeria's sovereign integrator and lifecycle operator for a full security-technology stack. Partners provide integrated maritime sensing, hydrography, autonomous underwater survey and decision support on one side and supervised autonomy, inertial navigation, subsea positioning and remote hydrographic operations on the other. TSL owns the Nigerian layer and the TSL-Colossus vehicle finances sovereign survey capability.",
     "",
     "PLATFORM SPINE",
     ontology.summary,

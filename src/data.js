@@ -56,42 +56,42 @@ export const missions = [
     problem:'Fragmented maritime picture, piracy and armed robbery exposure, illegal activity, navigation risk and limited persistence across a large maritime domain.',
     outcome:'A shared, auditable maritime picture that strengthens safety of navigation, search and rescue, lawful enforcement and blue-economy confidence.',
     offers:['National maritime picture pilot (bounded area)','NNS LANA readiness and lifecycle review','Autonomous hydrographic survey service','Deep-sea survey vessel acquisition (TSL-Colossus)','AI-assisted surveillance and preventive analysis','Federated National Resilience Twin'],
-    vendors:['KONGSBERG','Exail','TSL'], color:'#68e0c3'
+    vendors:['Partner A','Partner B','TSL'], color:'#68e0c3'
   },
   {
     id:'infrastructure', icon:'account_tree', title:'Critical infrastructure assurance', horizon:'0–24 months', lead:'ONSA / sector owners',
     problem:'Energy, ports, telecoms, transport and subsea assets require coordinated resilience, inspection, maintenance and cyber-physical risk governance.',
     outcome:'Higher asset availability, faster verified anomaly triage, improved preventive maintenance and evidence-grade incident records.',
     offers:['National asset knowledge graph (abstracted)','Digital twin of a consenting critical asset','Offline-first field data collection with sync','Local maintenance, calibration and spares centre','Federated security data platform with Sovereign control','Sovereign object ontology and writeback layer'],
-    vendors:['TSL','KONGSBERG','Exail'], color:'#ffd166'
+    vendors:['TSL','Partner A','Partner B'], color:'#ffd166'
   },
   {
     id:'land', icon:'shield', title:'Community safety & kidnapping prevention', horizon:'0–18 months', lead:'Police / ONSA / states',
     problem:'Kidnapping, banditry and disrupted rural access demand trusted reporting, case coordination, logistics, communications and predictive tasking of scarce patrols.',
     outcome:'Faster verified referrals, predictive patrol allocation, stronger chain of custody and better protection of schools and communities.',
     offers:['Trusted community incident reporting hotlines','Incident taxonomy and shared case tracking','Evidence and chain-of-custody interoperability','AI-assisted surveillance and preventive analysis','Predictive policing and patrol optimisation','Resilient multi-bearer communications backbone'],
-    vendors:['TSL','KONGSBERG'], color:'#ff8a80'
+    vendors:['TSL','Partner A'], color:'#ff8a80'
   },
   {
     id:'disaster', icon:'flood', title:'Disaster & climate resilience', horizon:'0–18 months', lead:'NEMA / states / NiMet / NIHSA',
     problem:'Floods and climate shocks compound displacement, access and critical-service risks; forecasts need clearer links to funded early action.',
     outcome:'A common readiness picture, pre-positioned logistics, accessible alerts and measurable early action before impact.',
     offers:['Flood-readiness digital twin with early action','Offline-first field data collection with sync','Autonomous hydrographic survey service','Resilient multi-bearer communications backbone','Sovereign object ontology and writeback layer','Federated National Resilience Twin'],
-    vendors:['TSL','Exail','KONGSBERG'], color:'#7cb7ff'
+    vendors:['TSL','Partner A','Partner B'], color:'#7cb7ff'
   },
   {
     id:'border', icon:'public', title:'Border, coast & environmental crime', horizon:'6–30 months', lead:'Customs / Immigration / Navy / regulators',
     problem:'Smuggling, trafficking, illegal fishing, illegal mining and environmental crime cross agency and geographic boundaries.',
     outcome:'Shared risk indicators, defensible referrals and coordinated patrol planning at an aggregated level with judicial oversight.',
     offers:['AI-assisted surveillance and preventive analysis','Predictive policing and patrol optimisation','Evidence and chain-of-custody interoperability','Autonomous drone airport facility','National maritime picture pilot (bounded area)','Sovereign object ontology and writeback layer'],
-    vendors:['TSL','KONGSBERG','Exail'], color:'#b8a1ff'
+    vendors:['TSL','Partner A','Partner B'], color:'#b8a1ff'
   },
   {
     id:'cyber', icon:'security', title:'Cyber & information resilience', horizon:'0–24 months', lead:'ONSA / NITDA / sector CSIRTs',
     problem:'National services face cyber risk, data fragmentation, vendor lock-in, disinformation and weak cross-sector incident learning.',
     outcome:'Sovereign, federated security operations with common standards, recovery metrics, auditability and public-trust controls.',
     offers:['Federated security data platform with Sovereign control','Sovereign AI lab and compute centre','AI assurance and trust office for security analytics','Sovereign object ontology and writeback layer','Command, control and coordination modernisation','Predictive policing and patrol optimisation'],
-    vendors:['TSL','KONGSBERG'], color:'#ffad66'
+    vendors:['TSL','Partner A'], color:'#ffad66'
   }
 ];
 
@@ -102,7 +102,7 @@ export const missions = [
 // value                  => measurable benefit to the mission
 // complexity             => 1 (low) .. 5 (high)
 // owners                 => primary accountable bodies
-// vendors                => KONGSBERG / Exail / TSL / neutral where applicable
+// vendors                => Partner A / Partner B / TSL / neutral where applicable
 export const solutionCatalogue = [
   {
     id: 'sol-01',
@@ -153,7 +153,7 @@ export const solutionCatalogue = [
     components: ['Multi-network gateways', 'Automatic failover and priority queues', 'Portable responder kits', 'Uptime dashboard'],
     value: 'Responder comms survive outages; help arrives faster where coverage is poor.',
     owners: ['Nigerian Communications Commission', 'States', 'NEMA'],
-    vendors: ['KONGSBERG', 'TSL'],
+    vendors: ['Partner A', 'TSL'],
     icon: 'wifi', tag: 'Continuity',
   },
     {
@@ -166,7 +166,7 @@ export const solutionCatalogue = [
     components: ['Certified workshop', 'Calibration lab', 'Spares stock policy', 'Repair service with response targets'],
     value: 'Repair times and costs drop; equipment availability rises across regions.',
     owners: ['NHA', 'NIMASA', 'Navy'],
-    vendors: ['KONGSBERG', 'Exail', 'TSL'],
+    vendors: ['Partner A', 'Partner A', 'TSL'],
     icon: 'precision_manufacturing', tag: 'Lifecycle',
   },
     {
@@ -179,7 +179,7 @@ export const solutionCatalogue = [
     components: ['Sensor and feed integration', 'Ship-tracking and satellite correlation', 'Operator workbench with audit trail', 'Scale decision with lessons learned'],
     value: 'Better search and rescue support; a defensible, auditable maritime picture.',
     owners: ['NIMASA', 'Navy', 'NHA'],
-    vendors: ['KONGSBERG', 'Exail', 'TSL'],
+    vendors: ['Partner A', 'Partner A', 'TSL'],
     icon: 'public', tag: 'MDA',
   },
     {
@@ -192,7 +192,7 @@ export const solutionCatalogue = [
     components: ['Connectors to asset and inspection data', 'Condition models', 'Inspection scheduling by risk', 'Work-order integration'],
     value: 'Higher uptime and safety; lower downtime and inspection cost.',
     owners: ['Sector owners', 'ONSA'],
-    vendors: ['KONGSBERG', 'TSL'],
+    vendors: ['Partner A', 'TSL'],
     icon: 'precision_manufacturing', tag: 'Asset integrity',
   },
     {
@@ -205,7 +205,7 @@ export const solutionCatalogue = [
     components: ['Asset and dependency model', 'Ownership and source metadata', 'Recovery plan links', 'Controlled query access'],
     value: 'Better incident prioritisation; faster, coordinated recovery.',
     owners: ['ONSA', 'Sector owners', 'NEMA'],
-    vendors: ['TSL', 'KONGSBERG'],
+    vendors: ['TSL', 'Partner A'],
     icon: 'account_tree', tag: 'Dependencies',
   },
     {
@@ -218,7 +218,7 @@ export const solutionCatalogue = [
     components: ['Technical health report', 'Upgrade options', 'Spares and support plan', 'Crew training pathway'],
     value: 'More survey days per year; fewer capability gaps.',
     owners: ['NHA', 'Navy'],
-    vendors: ['KONGSBERG', 'TSL'],
+    vendors: ['Partner A', 'TSL'],
     icon: 'directions_boat', tag: 'Hydrography',
   },
     {
@@ -231,7 +231,7 @@ export const solutionCatalogue = [
     components: ['On-site analytics on cameras and radar', 'Cross-feed correlation', 'Alert triage with audit trail', 'Model-drift monitoring'],
     value: 'Fewer missed events; analysts spend time on investigation.',
     owners: ['Nigerian Army Intelligence', 'NSCDC', 'NIMASA'],
-    vendors: ['TSL', 'KONGSBERG', 'neutral'],
+    vendors: ['TSL', 'Partner A', 'neutral'],
     icon: 'visibility', tag: 'Surveillance',
   },
     {
@@ -244,7 +244,7 @@ export const solutionCatalogue = [
     components: ['Unmanned survey operations', 'Sensor and data workflow', 'Quality checks before chart handoff', 'Local crew training'],
     value: 'Faster, safer surveys; certified Nigerian operators.',
     owners: ['NHA', 'Navy', 'States'],
-    vendors: ['Exail', 'KONGSBERG', 'TSL'],
+    vendors: ['Partner A', 'Partner A', 'TSL'],
     icon: 'waves', tag: 'Blue economy',
   },
     {
@@ -270,7 +270,7 @@ export const solutionCatalogue = [
     components: ['Flood hazard model', 'Dependency map', 'Logistics and shelter view', 'Early-action triggers'],
     value: 'Decisions move earlier; loss of life and economic damage fall.',
     owners: ['NEMA', 'NiMet', 'States', 'NIHSA'],
-    vendors: ['TSL', 'KONGSBERG'],
+    vendors: ['TSL', 'Partner A'],
     icon: 'flood', tag: 'Climate',
   },
     {
@@ -309,7 +309,7 @@ export const solutionCatalogue = [
     components: ['Place and time risk scoring', 'Patrol optimisation', 'Writeback to command systems', 'Analyst workbench with explanations'],
     value: 'Higher hit-rate on crime windows; fewer wasted patrol hours.',
     owners: ['Police', 'ONSA', 'NSCDC', 'Navy'],
-    vendors: ['TSL', 'KONGSBERG', 'neutral'],
+    vendors: ['TSL', 'Partner A', 'neutral'],
     icon: 'online_prediction', tag: 'Predictive ops',
   },
     {
@@ -322,7 +322,7 @@ export const solutionCatalogue = [
     components: ['Federated data and identity', 'Knowledge and scenario model', 'Readiness dashboards and simulation', 'Human-authorised decisions'],
     value: 'Coordinated national readiness; faster response across missions.',
     owners: ['ONSA', 'NEMA', 'Sector owners'],
-    vendors: ['TSL', 'KONGSBERG', 'Exail'],
+    vendors: ['TSL', 'Partner A', 'Partner A'],
     icon: 'hub', tag: 'National twin',
   },
     {
@@ -335,7 +335,7 @@ export const solutionCatalogue = [
     components: ['Common-picture workbench', 'Workflow engine', 'Voice, data and video integration', 'Exercise and rehearsal tools'],
     value: 'Faster escalation and authorised response; command lines stay intact.',
     owners: ['ONSA', 'NEMA', 'NIMASA', 'States'],
-    vendors: ['KONGSBERG', 'TSL'],
+    vendors: ['Partner A', 'TSL'],
     icon: 'leaderboard', tag: 'C4I',
   },
     {
@@ -361,7 +361,7 @@ export const solutionCatalogue = [
     components: ['Automated landing pad and nets', 'Charging and payload swap', 'Air-traffic de-confliction', 'Tasking with geo-fencing'],
     value: 'Continuous wide-area coverage without aircrew risk; fewer lost assets.',
     owners: ['NAMA', 'Nigerian Air Force', 'Nigerian Army Intelligence'],
-    vendors: ['KONGSBERG', 'TSL', 'Exail'],
+    vendors: ['Partner A', 'TSL', 'Partner A'],
     icon: 'flight', tag: 'Air mobility',
   },
     {
@@ -387,7 +387,7 @@ export const solutionCatalogue = [
     components: ['NNS LANA reactivation as interim step', 'New or upgraded flagship with on-board labs', 'Usage-linked financing (36-60 months)', 'Joint operations and chart revenue model'],
     value: 'Surveying starts in months; Nigeria owns the capability instead of renting it.',
     owners: ['NHA', 'Navy', 'Ministry of Finance'],
-    vendors: ['TSL', 'KONGSBERG'],
+    vendors: ['TSL', 'Partner A'],
     icon: 'sailing', tag: 'Hydrography',
   }
 ];;
@@ -425,7 +425,7 @@ export const offerings = [
     group: 'Sovereign platforms and national services (complexity 4)',
     icon: 'security',
     items: [
-      ['Autonomous hydrographic survey service','Outcome-based USV campaigns using DriX and KONGSBERG sonar, IHO-compliant, building local capability.'],
+      ['Autonomous hydrographic survey service','Outcome-based USV campaigns using DriX and partner sonar, IHO-compliant, building local capability.'],
       ['Federated security data platform with Sovereign control','Zero-trust platform enabling collaboration without ceding source authority or personal-data control.'],
       ['Flood-readiness digital twin with early action','Aggregated forecast + service + logistics + shelter twin with pre-committed early-action funding.'],
       ['Evidence and chain-of-custody interoperability','Standards-based digital evidence, custody ledger and prosecution-file interfaces across agencies.'],
@@ -471,8 +471,8 @@ export const graph = {
     ['Federated Security Data Platform','platform',260,170],
     ['Knowledge & Scenario Graph','platform',740,170],
     // Technology partners
-    ['KONGSBERG','vendor',180,300],
-    ['Exail','vendor',820,300],
+    ['Partner A','vendor',180,300],
+    ['Partner B','vendor',820,300],
     // Missions (the "why")
     ['Maritime security & blue economy','mission',220,410],
     ['Critical infrastructure assurance','mission',500,430],
@@ -509,8 +509,8 @@ export const graph = {
   edges: [
     // Integrator relationships
     ['TSL Logistics','governs','National Resilience Twin'],
-    ['TSL Logistics','local delivery','KONGSBERG'],
-    ['TSL Logistics','local delivery','Exail'],
+    ['TSL Logistics','local delivery','Partner A'],
+    ['TSL Logistics','local delivery','Partner B'],
     ['TSL Logistics','local delivery','Federated Security Data Platform'],
     ['TSL Logistics','local delivery','Knowledge & Scenario Graph'],
     // Platform composition
@@ -521,16 +521,16 @@ export const graph = {
     ['Knowledge & Scenario Graph','models','Critical dependencies'],
     ['Federated Security Data Platform','enables','Evidence & chain of custody'],
     // Partner connections
-    ['KONGSBERG','provides sensing + COP to','Maritime security & blue economy'],
-    ['KONGSBERG','provides survey stack to','Maritime security & blue economy'],
-    ['KONGSBERG','provides inspection to','Critical infrastructure assurance'],
-    ['KONGSBERG','provides sensing to','Disaster & climate resilience'],
-    ['KONGSBERG','provides C4I to','Command & coordination modernisation'],
-    ['Exail','provides robotics + INS to','Maritime security & blue economy'],
-    ['Exail','provides survey + positioning to','Maritime security & blue economy'],
-    ['Exail','provides environmental data to','Border, coast & environmental crime'],
-    ['Exail','provides autonomy to','Asset integrity twin'],
-    ['Exail','provides autonomy to','Flood-readiness twin'],
+    ['Partner A','provides sensing + COP to','Maritime security & blue economy'],
+    ['Partner A','provides survey stack to','Maritime security & blue economy'],
+    ['Partner A','provides inspection to','Critical infrastructure assurance'],
+    ['Partner A','provides sensing to','Disaster & climate resilience'],
+    ['Partner A','provides C4I to','Command & coordination modernisation'],
+    ['Partner B','provides robotics + INS to','Maritime security & blue economy'],
+    ['Partner B','provides survey + positioning to','Maritime security & blue economy'],
+    ['Partner B','provides environmental data to','Border, coast & environmental crime'],
+    ['Partner B','provides autonomy to','Asset integrity twin'],
+    ['Partner B','provides autonomy to','Flood-readiness twin'],
     // Services back to missions / platforms
     ['Community reporting hotlines','mitigates','Community safety & kidnapping prevention'],
     ['Offline field data collection','supports','Critical infrastructure assurance'],
@@ -560,8 +560,8 @@ export const graph = {
     ['TSL-Colossus deep-sea vessel','extends','Maritime security & blue economy'],
     ['TSL-Colossus deep-sea vessel','supports','Cyber & information resilience'],
     ['NNS LANA rehab track','interim for','TSL-Colossus deep-sea vessel'],
-    ['KONGSBERG','provides survey stack to','TSL-Colossus deep-sea vessel'],
-    ['KONGSBERG','equips','NNS LANA rehab track'],
+    ['Partner A','provides survey stack to','TSL-Colossus deep-sea vessel'],
+    ['Partner A','equips','NNS LANA rehab track'],
     ['TSL Logistics','finances','TSL-Colossus deep-sea vessel'],
     ['TSL Logistics','operates','NNS LANA rehab track'],
     // Mission owners
@@ -620,13 +620,7 @@ export const sources = [
   {tag:'TSL-Colossus confidential',private:true,title:'NNS Lana Rehabilitation Proposal',org:'TSL-Colossus Consortium',url:'',note:'Private client proposal: NNS LANA (OCEA 2018, 60.1m, EM2040/EM304, SEAPATH 380-5, HIPAP) rehabilitation as the interim hydrography track \u2014 joint condition assessment 4\u20136 weeks before any repair cost.'},
   {tag:'Nigeria policy',title:'National Security Strategy 2019',org:'Federal Republic of Nigeria / NCTC',url:'https://nctc.gov.ng/storage/2024/01/NSS-2019.pdf',note:'Sets comprehensive security objectives, inter-agency implementation and measurable outcomes.'},
   {tag:'Nigeria maritime',title:'Deep Blue Project launch and asset model',org:'NIMASA',url:'https://nimasa.gov.ng/president-buhari-launches-deep-blue-project-in-lagos/',note:'Documents Nigeria’s integrated land, sea, air and C4i maritime-security foundation.'},
-  {tag:'Nigeria hydrography',title:'National Hydrographic Agency survey fleet',org:'NHA',url:'https://nha.gov.ng/survey-fleet/',note:'Documents NNS LANA, NNS OCHUZO, survey launches and existing KONGSBERG multibeam systems.'},
-  {tag:'KONGSBERG',title:'Surveillance & monitoring portfolio',org:'KONGSBERG',url:'https://www.kongsberg.com/what-we-do/ocean-space/surveillance-monitoring/',note:'Official portfolio: AIS, cView, Foresight, HUGIN, sonar, infrastructure inspection and situational awareness.'},
-  {tag:'KONGSBERG',title:'HUGIN autonomous underwater vehicle',org:'KONGSBERG',url:'https://www.kongsberg.com/what-we-do/ocean-space/autonomous-and-uncrewed-solutions/auv/hugin/',note:'Official multi-sensor hydrography, geophysical survey and inspection capabilities.'},
-  {tag:'KONGSBERG',title:'Vessel Insight platform',org:'KONGSBERG',url:'https://www.kongsberg.com/maritime/vessel-insight/',note:'Official maritime fleet and asset-data platform for condition and readiness.'},
-  {tag:'Exail',title:'DriX H-8 medium-range USV',org:'Exail',url:'https://www.exail.com/product/drix-h8-medium-range-usv',note:'Official supervised-autonomy, payload, hydrographic and remote-control capability.'},
-  {tag:'Exail',title:'DriX H-9 selected by Shom',org:'Exail',url:'https://www.exail.com/news/shom-strengthens-its-hydrographic-capabilities-with-drix-h-9-usv',note:'Official case for accelerating certified hydrographic data acquisition and extending coverage.'},
-  {tag:'Exail',title:'Navigation & inertial solutions for maritime',org:'Exail',url:'https://www.exail.com/product-family/navigation-for-maritime-applications',note:'Official FOG-based INS, AHRS and GNSS-independent navigation portfolio.'},
+  {tag:'Nigeria hydrography',title:'National Hydrographic Agency survey fleet',org:'NHA',url:'https://nha.gov.ng/survey-fleet/',note:'Documents NNS LANA, NNS OCHUZO, survey launches and existing multibeam systems.'},
   {tag:'TSL',title:'TSL Logistics operations and services',org:'TSL Logistics',url:'https://tsllog.tsllogisticsltd.com/tsl-operations/',note:'Documents TSL’s terminal, pipeline, infrastructure, inventory, consultancy, HSSEQ and technology credentials.'},
   {tag:'Rule of law',title:'Strategic Vision for Nigeria 2030',org:'UNODC',url:'https://www.unodc.org/conig/uploads/documents/documents/UNODC_Strategic_Vision_for_Nigeria_2030-WEB_VERSION.pdf',note:'Frames justice, terrorism prevention, organised crime, maritime crime, environment and institutional integrity.'},
   {tag:'Maritime evidence',title:'Piracy and armed robbery reporting',org:'IMO',url:'https://www.imo.org/en/ourwork/security/pages/piracy-reports-default.aspx',note:'Authoritative incident-reporting framework and annual/monthly public reports.'},
